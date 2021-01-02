@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background_1_" >
+
+    <EditText
+        android:id="@+id/editTextTextPassword2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/editor"
+        android:ems="10"
+        android:hapticFeedbackEnabled="false"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="308dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="51dp"
+        android:layout_height="44dp"
+        android:background="@drawable/btn_login"
+        android:rotationX="2"
+        app:backgroundTint="#00000000"
+        app:icon="@drawable/login"
+        app:iconPadding="8px"
+        app:iconSize="?attr/listPreferredItemPaddingStart"
+        app:iconTint="#000000"
+        tools:layout_editor_absoluteX="180dp"
+        tools:layout_editor_absoluteY="551dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="180dp"
+        android:layout_height="150dp"
+        android:hapticFeedbackEnabled="false"
+        app:srcCompat="@drawable/logo_1_"
+        tools:layout_editor_absoluteX="122dp"
+        tools:layout_editor_absoluteY="41dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="73dp"
+        android:layout_height="37dp"
+        android:fontFamily="@font/actor"
+        android:text="LOGIN"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:typeface="sans"
+        tools:layout_editor_absoluteX="169dp"
+        tools:layout_editor_absoluteY="233dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="270dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="367dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/editor"
+        android:ems="10"
+        android:hapticFeedbackEnabled="false"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="404dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="111dp"
+        android:layout_height="30dp"
+        android:background="@color/material_on_primary_disabled"
+        android:checked="false"
+        android:clickable="true"
+        android:fontFamily="sans-serif-black"
+        android:hapticFeedbackEnabled="false"
+        android:text="Remember me"
+        android:textSize="10sp"
+        app:buttonTint="#FFFFFF"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="437dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:text="Forgot Login Details?"
+        android:textSize="12sp"
+        tools:layout_editor_absoluteX="187dp"
+        tools:layout_editor_absoluteY="467dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
