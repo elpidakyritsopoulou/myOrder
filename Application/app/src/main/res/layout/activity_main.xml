@@ -40,11 +40,11 @@
         android:background="@color/black"
         android:isScrollContainer="false"
         android:rotationX="2"
-        app:backgroundTint="@color/design_default_color_error"
+        app:backgroundTint="#3C3F41"
         app:icon="@drawable/login"
         app:iconPadding="15px"
         app:iconSize="?attr/listPreferredItemPaddingStart"
-        app:iconTint="#FFFFFF"
+        app:iconTint="#C81717"
         tools:layout_editor_absoluteX="180dp"
         tools:layout_editor_absoluteY="551dp" />
 
