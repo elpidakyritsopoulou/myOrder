@@ -5,8 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_1_"
-    >
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
 
 
     <Button
@@ -20,8 +20,7 @@
         android:layout_marginLeft="41dp"
         android:layout_marginTop="171dp"
         android:background="@drawable/card"
-        android:clickable="true"
-        android:onClick="Order"
+        android:text=""
         app:backgroundTint="#000000" />
 
     <Button
