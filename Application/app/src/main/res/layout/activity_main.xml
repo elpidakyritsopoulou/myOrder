@@ -102,7 +102,6 @@
         android:layout_marginTop="236dp"
         android:background="@drawable/btn_login"
         android:clickable="true"
-        android:onClick="Order"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
