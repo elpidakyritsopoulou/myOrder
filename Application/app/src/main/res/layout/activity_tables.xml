@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_1_"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/table_1_"
+        android:layout_width="157dp"
+        android:layout_height="137dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="130dp"
+        android:background="@drawable/tables"
+        android:text="Table 1"
+        app:backgroundTint="#000000" />
+
+    <Button
+        android:id="@+id/table_2_"
+        android:layout_width="157dp"
+        android:layout_height="137dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="238dp"
+        android:layout_marginLeft="238dp"
+        android:layout_marginTop="127dp"
+        android:background="@drawable/tables"
+        android:text="Table 2"
+        app:backgroundTint="#000000" />
+
+    <Button
+        android:id="@+id/table_3_"
+        android:layout_width="157dp"
+        android:layout_height="137dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="456dp"
+        android:background="@drawable/tables"
+        android:text="Table 3"
+        app:backgroundTint="#000000" />
+
+    <Button
+        android:id="@+id/table_4_"
+        android:layout_width="157dp"
+        android:layout_height="137dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="240dp"
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="450dp"
+        android:background="@drawable/tables"
+        android:text="Table 4"
+        app:backgroundTint="#000000" />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="77dp"
+        android:layout_height="82dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginLeft="-1dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/arrow"
+        android:rotation="180"
+        app:backgroundTint="#000000" />
+
+</RelativeLayout></androidx.constraintlayout.widget.ConstraintLayout>
