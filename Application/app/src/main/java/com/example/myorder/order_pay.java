@@ -8,43 +8,41 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
-public class Menu extends AppCompatActivity {
-
-    Button Home;
+public class order_pay extends AppCompatActivity {
     ImageView Backbutton;
-    Button Done;
-
+    Button Order;
+    Button Pay;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_menu);
+        setContentView(R.layout.activity_order_pay);
 
-        Home = findViewById(R.id.home);
         Backbutton = findViewById(R.id.backbutton);
-        Done = findViewById(R.id.done);
-
-        Home.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent_one= new Intent(Menu.this,Tables.class);
-                startActivity(intent_one);
-            }
-
-        });
+        Order = findViewById(R.id.Order);
+        Pay = findViewById(R.id.pay);
 
         Backbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent_one= new Intent(Menu.this,order_pay.class);
+                Intent intent_one= new Intent(order_pay.this,Tables.class);
                 startActivity(intent_one);
             }
 
         });
 
-        Done.setOnClickListener(new View.OnClickListener() {
+        Order.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent_one= new Intent(Menu.this,Order.class);
+                Intent intent_one= new Intent(order_pay.this,Menu.class);
+                startActivity(intent_one);
+            }
+
+        });
+
+        Pay.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent_one= new Intent(order_pay.this,payment_method.class);
                 startActivity(intent_one);
             }
 
