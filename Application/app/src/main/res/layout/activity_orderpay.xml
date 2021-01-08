@@ -10,7 +10,7 @@
 
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/pay"
         android:layout_width="348dp"
         android:layout_height="184dp"
         android:layout_alignParentStart="true"
@@ -19,6 +19,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="116dp"
         android:background="#FFFFFF"
+        android:clickable="true"
         android:text="Pay"
         android:textSize="30sp"
         android:textStyle="bold"
@@ -27,11 +28,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button5"
+        app:layout_constraintTop_toBottomOf="@+id/Order"
         app:layout_constraintVertical_bias="0.939" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/Order"
         android:layout_width="348dp"
         android:layout_height="184dp"
         android:layout_alignParentStart="true"
@@ -40,6 +41,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="132dp"
         android:background="#FFFFFF"
+        android:clickable="true"
         android:text="Order"
         android:textSize="30sp"
         android:textStyle="bold"
@@ -51,23 +53,24 @@
         app:rippleColor="#000000" />
 
     <ImageView
-        android:id="@+id/imageView6"
+        android:id="@+id/backbutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/back_button" />
 
     <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="58dp"
-        android:layout_height="57dp"
+        android:id="@+id/sundetiras"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
         android:layout_marginTop="16dp"
+        android:clickable="true"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.912"
+        app:layout_constraintHorizontal_bias="0.955"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/paperclip" />

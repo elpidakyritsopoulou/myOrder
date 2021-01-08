@@ -8,71 +8,20 @@
     tools:context=".Menu">
 
 
-
     <ImageView
-        android:id="@+id/imageView11"
+        android:id="@+id/backbutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="680dp"
+        android:clickable="true"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/back_button" />
 
     <Button
-        android:id="@+id/button8"
-        android:layout_width="278dp"
-        android:layout_height="99dp"
-        android:background="@drawable/kuriws"
-        android:text="ΚΥΡΙΩΣ"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:backgroundTint="#00FFFFFF"
-        app:backgroundTintMode="add"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.393" />
-
-    <Button
-        android:id="@+id/button9"
-        android:layout_width="278dp"
-        android:layout_height="99dp"
-        android:background="@drawable/epidorpia"
-        android:text="ΕΠΙΔΟΡΠΙΑ"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:backgroundTint="#00FFFFFF"
-        app:backgroundTintMode="add"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.591" />
-
-    <Button
-        android:id="@+id/button10"
-        android:layout_width="278dp"
-        android:layout_height="99dp"
-        android:background="@drawable/cola"
-        android:text="ΑΝΑΨΥΚΤΙΚΑ"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:backgroundTint="#00FFFFFF"
-        app:backgroundTintMode="add"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.814" />
-
-    <Button
-        android:id="@+id/button4"
+        android:id="@+id/oreltika"
         android:layout_width="278dp"
         android:layout_height="99dp"
         android:background="@drawable/orektika"
@@ -87,16 +36,70 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.174"
-
-
         />
+    <Button
+        android:id="@+id/kuriws"
+        android:layout_width="278dp"
+        android:layout_height="99dp"
+        android:background="@drawable/kuriws"
+        android:clickable="true"
+        android:text="ΚΥΡΙΩΣ"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:backgroundTint="#00FFFFFF"
+        app:backgroundTintMode="add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.393" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/epidorpia"
+        android:layout_width="278dp"
+        android:layout_height="99dp"
+        android:background="@drawable/epidorpia"
+        android:clickable="true"
+        android:text="ΕΠΙΔΟΡΠΙΑ"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:backgroundTint="#00FFFFFF"
+        app:backgroundTintMode="add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.591" />
+
+    <Button
+        android:id="@+id/anapsyktika"
+        android:layout_width="278dp"
+        android:layout_height="99dp"
+        android:background="@drawable/cola"
+        android:clickable="true"
+        android:text="ΑΝΑΨΥΚΤΙΚΑ"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:backgroundTint="#00FFFFFF"
+        app:backgroundTintMode="add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.814" />
+
+
+
+    <Button
+        android:id="@+id/home"
         android:layout_width="50dp"
         android:layout_height="51dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/home"
+        android:clickable="true"
         app:backgroundTint="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.044"
@@ -104,7 +107,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button11"
+        android:id="@+id/done"
         android:layout_width="123dp"
         android:layout_height="75dp"
         android:layout_marginBottom="16dp"
