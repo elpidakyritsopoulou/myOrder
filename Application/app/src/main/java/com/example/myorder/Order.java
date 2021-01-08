@@ -9,21 +9,21 @@ import android.widget.ImageView;
 
 public class Order extends AppCompatActivity {
 
-    ImageView Button;
+    ImageView Cancel;
     ImageView Backbutton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.order);
 
-        Button = findViewById(R.id.check);
+        Cancel= findViewById(R.id.cancel_button);
         Backbutton= findViewById(R.id.backbutton);
 
-        Button.setOnClickListener(new  View.OnClickListener() {
+        Cancel.setOnClickListener(new  View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                Intent intent_one = new Intent(Order.this, payment_method.class);
+                Intent intent_one = new Intent(Order.this, Menu.class);
                 startActivity(intent_one);
 
             }
