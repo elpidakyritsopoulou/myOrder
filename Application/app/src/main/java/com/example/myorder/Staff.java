@@ -23,6 +23,7 @@ public class Staff extends AppCompatActivity {
         Staff3 = findViewById(R.id.Staff3);
         Staff4 = findViewById(R.id.Staff4);
 
+
         Staff1.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -31,6 +32,38 @@ public class Staff extends AppCompatActivity {
                 startActivity(intent_one);
 
             }
+
+        });
+
+        Staff2.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent intent_one = new Intent(Staff.this, tables.class);
+                startActivity(intent_one);
+
+            }
+
+        });
+        Staff3.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent intent_one = new Intent(Staff.this, tables.class);
+                startActivity(intent_one);
+
+            }
+
+        });
+        Staff4.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent intent_one = new Intent(Staff.this, tables.class);
+                startActivity(intent_one);
+
+            }
+
         });
 
     }
