@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyOrder">
-        <activity android:name=".Kiriws"></activity>
+        <activity android:name=".anapsiktika"></activity>
+        <activity android:name=".Epidorpia" />
+        <activity android:name=".Kiriws" />
         <activity android:name=".Orektika" />
         <activity android:name=".payment_method" />
         <activity android:name=".order_pay" />
