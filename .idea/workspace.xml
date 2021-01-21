@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7beedbf-c0e5-4f56-91d3-76f647afcb47" name="Default Changelist" comment="changes">
+      <change beforePath="$PROJECT_DIR$/.idea/myOrder.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/myOrder.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Application/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Application/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/app/src/main/java/com/example/myorder/Kiriws.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/app/src/main/res/layout/activity_kiriws.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyOrderWord.docx" beforeDir="false" afterPath="$PROJECT_DIR$/MyOrderWord.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myOrder" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +22,9 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -46,9 +44,25 @@
     <option name="LAST_COMMIT_MESSAGE" value="changes" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="421" y="99" key="FileChooserDialogImpl" timestamp="1611242104307">
+    <state x="121" y="0" key="#Project_Structure" timestamp="1611244008298">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state x="421" y="99" key="FileChooserDialogImpl/0.0.1280.689/-1366.0.1366.738@0.0.1280.689" timestamp="1611242104307" />
+    <state x="121" y="0" key="#Project_Structure/0.0.1280.689/-1366.0.1366.738@0.0.1280.689" timestamp="1611244008298" />
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1611244075839">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.689/-1366.0.1366.738@0.0.1280.689" timestamp="1611244075839" />
+    <state x="421" y="99" key="FileChooserDialogImpl" timestamp="1611244093561">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="421" y="99" key="FileChooserDialogImpl/0.0.1280.689/-1366.0.1366.738@0.0.1280.689" timestamp="1611244093561" />
+    <state x="142" y="0" key="SettingsEditor" timestamp="1611244045310">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="142" y="0" key="SettingsEditor/0.0.1280.689/-1366.0.1366.738@0.0.1280.689" timestamp="1611244045310" />
+    <state x="211" y="60" width="859" height="629" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1611244054456">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="211" y="60" width="859" height="629" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1280.689/-1366.0.1366.738@0.0.1280.689" timestamp="1611244054456" />
   </component>
 </project>
