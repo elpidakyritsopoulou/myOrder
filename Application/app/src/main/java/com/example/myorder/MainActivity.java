@@ -1,30 +1,29 @@
 package com.example.myorder;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    ImageView Button;
+    Button sign_in;
     Button register;
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_main);
 
-            Button = findViewById(R.id.imageView4);
+            sign_in = findViewById(R.id.SignIn);
             register = findViewById(R.id.register);
 
-            Button.setOnClickListener(new View.OnClickListener() {
+            sign_in.setOnClickListener(new View.OnClickListener() {
 
                 @Override
                 public void onClick(View v) {
-                    Intent intent_one = new Intent(MainActivity.this, Staff.class);
+                    Intent intent_one = new Intent(MainActivity.this, SignIn.class);
                     startActivity(intent_one);
 
                 }
@@ -39,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
 
                 }
             });
+
 
         }
     }
