@@ -1,14 +1,13 @@
 package com.example.myorder;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -62,9 +61,9 @@ public class Register extends AppCompatActivity {
                                         @Override
                                         public void onComplete(@NonNull Task<Void> task) {
                                             if (task.isSuccessful()) {
-                                                Toast.makeText(Register.this, "Registered", Toast.LENGTH_SHORT).show();
+                                                Toast.makeText(Register.this, "Η εγγραφή ολοκληρώθηκε!", Toast.LENGTH_SHORT).show();
                                             } else {
-                                                Toast.makeText(Register.this, "Doesn't Registered", Toast.LENGTH_SHORT).show();
+                                                Toast.makeText(Register.this, "Σφάλμα!", Toast.LENGTH_SHORT).show();
                                             }
                                         }
                                     });
