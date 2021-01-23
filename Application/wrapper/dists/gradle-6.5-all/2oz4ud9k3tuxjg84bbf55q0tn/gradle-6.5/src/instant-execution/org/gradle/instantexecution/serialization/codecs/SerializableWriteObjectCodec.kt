@@ -49,7 +49,7 @@ import java.lang.reflect.Method
 class SerializableWriteObjectCodec : EncodingProducer, Decoding {
 
     override fun encodingForType(type: Class<*>): Encoding? =
-            writeObjectMethodOf(type)?.let(::WriteObjectEncoding)
+        writeObjectMethodOf(type)?.let(::WriteObjectEncoding)
 
     override suspend fun ReadContext.decode(): Any? =
             decodePreservingIdentity { id ->

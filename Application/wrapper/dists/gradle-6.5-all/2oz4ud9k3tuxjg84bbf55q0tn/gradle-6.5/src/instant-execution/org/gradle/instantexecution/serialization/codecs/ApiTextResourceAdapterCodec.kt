@@ -33,7 +33,7 @@ object ApiTextResourceAdapterCodec : Codec<ApiTextResourceAdapter> {
     }
 
     override suspend fun ReadContext.decode(): ApiTextResourceAdapter =
-            textResourceFactory.fromInsecureUri(readString()) as ApiTextResourceAdapter
+        textResourceFactory.fromInsecureUri(readString()) as ApiTextResourceAdapter
 
     private
     val ReadContext.textResourceFactory: TextResourceFactory

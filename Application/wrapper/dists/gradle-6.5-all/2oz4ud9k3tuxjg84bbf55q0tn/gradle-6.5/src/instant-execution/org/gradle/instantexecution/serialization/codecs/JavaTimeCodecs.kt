@@ -40,5 +40,5 @@ object DurationCodec : Codec<Duration> {
     }
 
     override suspend fun ReadContext.decode(): Duration =
-            Duration.ofSeconds(readLong(), readSmallInt().toLong())
+        Duration.ofSeconds(readLong(), readSmallInt().toLong())
 }

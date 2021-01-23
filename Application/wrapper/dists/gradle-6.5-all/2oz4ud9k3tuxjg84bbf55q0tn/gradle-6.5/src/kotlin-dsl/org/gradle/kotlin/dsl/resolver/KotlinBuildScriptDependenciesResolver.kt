@@ -47,7 +47,7 @@ typealias Report = (ReportSeverity, String, Position?) -> Unit
 
 private
 fun Report.warning(message: String, position: Position? = null) =
-        invoke(ReportSeverity.WARNING, message, position)
+    invoke(ReportSeverity.WARNING, message, position)
 
 
 private

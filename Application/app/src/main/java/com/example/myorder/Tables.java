@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.PopupMenu;
 
 public class Tables extends AppCompatActivity {
     ImageView Backbutton;
@@ -14,6 +15,7 @@ public class Tables extends AppCompatActivity {
     Button Table2;
     Button Table3;
     Button Table4;
+    Button button;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,6 +26,7 @@ public class Tables extends AppCompatActivity {
         Table2 = findViewById(R.id.table_2_);
         Table3 = findViewById(R.id.table_3_);
         Table4 = findViewById(R.id.table_4_);
+
 
             Backbutton.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -64,10 +67,12 @@ public class Tables extends AppCompatActivity {
         Table4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent_one= new Intent(Tables.this,order_pay.class);
+                Intent intent_one = new Intent(Tables.this, order_pay.class);
                 startActivity(intent_one);
             }
 
         });
+
     }
+
 }

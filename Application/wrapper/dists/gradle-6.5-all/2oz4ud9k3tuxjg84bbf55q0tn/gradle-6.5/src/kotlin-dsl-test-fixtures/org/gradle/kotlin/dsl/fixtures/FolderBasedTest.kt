@@ -19,7 +19,7 @@ abstract class FolderBasedTest {
         get() = tempFolder.testDirectory
 
     fun withFolders(folders: FoldersDslExpression) =
-            root.withFolders(folders)
+        root.withFolders(folders)
 
     fun folder(path: String): File =
             existing(path).apply {

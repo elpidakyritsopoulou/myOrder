@@ -42,7 +42,7 @@ object ProgramParser {
             checkForTopLevelBlockOrder(topLevelBlocks)
 
             val sourceWithoutComments =
-                    source.map { it.erase(comments) }
+                source.map { it.erase(comments) }
 
             val buildscriptFragment =
                     topLevelBlocks

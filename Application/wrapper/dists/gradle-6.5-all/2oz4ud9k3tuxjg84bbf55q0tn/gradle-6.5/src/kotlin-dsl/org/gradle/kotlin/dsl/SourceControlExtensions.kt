@@ -26,4 +26,4 @@ import org.gradle.vcs.VersionControlSpec
  * @see VcsMapping.from
  */
 inline fun <reified T : VersionControlSpec> VcsMapping.from(noinline configureAction: T.() -> Unit) =
-        from(T::class.java, configureAction)
+    from(T::class.java, configureAction)

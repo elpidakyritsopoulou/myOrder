@@ -28,4 +28,4 @@ import org.gradle.api.initialization.dsl.ScriptHandler
  */
 @Incubating
 fun ScriptHandler.dependencyLocking(configuration: DependencyLockingHandler.() -> Unit) =
-        dependencyLocking.configuration()
+    dependencyLocking.configuration()

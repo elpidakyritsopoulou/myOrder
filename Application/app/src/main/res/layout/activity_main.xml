@@ -114,7 +114,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="33dp"
         android:text="Register "
-        app:backgroundTint="#1B888787"
+        app:backgroundTint="#40444B"
         app:iconTint="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

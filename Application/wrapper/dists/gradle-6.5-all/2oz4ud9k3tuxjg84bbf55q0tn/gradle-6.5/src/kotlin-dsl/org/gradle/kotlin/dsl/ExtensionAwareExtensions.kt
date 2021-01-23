@@ -25,7 +25,7 @@ import kotlin.reflect.KClass
  * @param T the extension type.
  */
 inline fun <reified T : Any> ExtensionAware.the(): T =
-        extensions.getByType(typeOf<T>())
+    extensions.getByType(typeOf<T>())
 
 
 /**

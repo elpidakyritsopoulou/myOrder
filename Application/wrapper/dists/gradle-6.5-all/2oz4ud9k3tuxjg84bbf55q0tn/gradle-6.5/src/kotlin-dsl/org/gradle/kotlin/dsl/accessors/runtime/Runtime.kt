@@ -30,7 +30,7 @@ import org.gradle.kotlin.dsl.support.uncheckedCast
 
 
 fun extensionOf(target: Any, extensionName: String): Any =
-        (target as ExtensionAware).extensions.getByName(extensionName)
+    (target as ExtensionAware).extensions.getByName(extensionName)
 
 
 fun conventionPluginOf(target: Any, name: String) =

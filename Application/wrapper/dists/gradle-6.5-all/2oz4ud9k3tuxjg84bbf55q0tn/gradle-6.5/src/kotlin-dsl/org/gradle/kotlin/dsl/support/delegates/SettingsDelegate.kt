@@ -45,7 +45,7 @@ abstract class SettingsDelegate : Settings {
     abstract val delegate: Settings
 
     override fun getSettings(): Settings =
-            delegate.settings
+        delegate.settings
 
     override fun getBuildscript(): ScriptHandler =
             delegate.buildscript

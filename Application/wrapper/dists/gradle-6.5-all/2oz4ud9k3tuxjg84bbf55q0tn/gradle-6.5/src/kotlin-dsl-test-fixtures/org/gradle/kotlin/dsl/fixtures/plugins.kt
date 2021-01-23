@@ -18,4 +18,4 @@ package org.gradle.kotlin.dsl.fixtures
 
 
 fun pluginDescriptorEntryFor(id: String, implClass: String) =
-        "META-INF/gradle-plugins/$id.properties" to "implementation-class=$implClass".toByteArray()
+    "META-INF/gradle-plugins/$id.properties" to "implementation-class=$implClass".toByteArray()

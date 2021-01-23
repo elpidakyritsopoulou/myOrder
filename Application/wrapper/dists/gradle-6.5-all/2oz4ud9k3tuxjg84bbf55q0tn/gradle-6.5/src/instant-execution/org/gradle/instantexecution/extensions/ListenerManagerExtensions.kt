@@ -21,4 +21,4 @@ import org.gradle.internal.event.ListenerManager
 
 internal
 inline fun <reified T> ListenerManager.getBroadcaster(): T =
-        getBroadcaster(T::class.java)
+    getBroadcaster(T::class.java)

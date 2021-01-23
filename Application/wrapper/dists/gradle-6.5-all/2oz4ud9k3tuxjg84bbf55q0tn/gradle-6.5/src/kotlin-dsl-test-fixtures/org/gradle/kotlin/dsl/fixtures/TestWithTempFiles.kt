@@ -25,7 +25,7 @@ abstract class TestWithTempFiles {
      * See [org.junit.rules.TemporaryFolder.newFolder]
      */
     fun newFolder(): File =
-            tempFolder.testDirectory.createDir()
+        tempFolder.testDirectory.createDir()
 
     protected
     fun file(fileName: String): File =
