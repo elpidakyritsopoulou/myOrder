@@ -43,7 +43,6 @@ public class SignIn extends AppCompatActivity {
                 } else {
                     Toast.makeText(SignIn.this, "Please Login", Toast.LENGTH_SHORT).show();
                 }
-
             }
         };
 
@@ -54,7 +53,7 @@ public class SignIn extends AppCompatActivity {
                 String username_text = username.getText().toString();
                 String password_text = password.getText().toString();
 
-                if (username_text.isEmpty()) {
+               if (username_text.isEmpty()) {
                     username.setError("Please enter User Name");
                     username.requestFocus();
                 } else if (password_text.isEmpty()) {
@@ -68,13 +67,13 @@ public class SignIn extends AppCompatActivity {
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if (!task.isSuccessful()) {
                                 Toast.makeText(SignIn.this, "Login Error, Please Login Again", Toast.LENGTH_SHORT).show();
-                            } else {
+                           } else {
                                 Intent intToHome = new Intent(SignIn.this, MainActivity.class);
                                 startActivity(intToHome);
-                            }
+                           }
                         }
                     });
-                } else {
+               } else {
                     Toast.makeText(SignIn.this, "Error Occurred!", Toast.LENGTH_SHORT).show();
                 }
 

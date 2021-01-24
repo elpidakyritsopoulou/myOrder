@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AndroidGradleBuildConfiguration">
+    <option name="SYNC_PROJECT_BEFORE_BUILD" value="true" />
+  </component>
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="c7beedbf-c0e5-4f56-91d3-76f647afcb47" name="Default Changelist" comment="changes" />
+    <list default="true" id="c7beedbf-c0e5-4f56-91d3-76f647afcb47" name="Default Changelist" comment="changes">
+      <change beforePath="$PROJECT_DIR$/.idea/myOrder.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/myOrder.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,12 +39,14 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="BundleExportedModule" value="myOrder" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -61,17 +74,27 @@
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.689/-1366.0.1366.738@0.0.1280.689" timestamp="1611244075839" />
-    <state x="421" y="99" key="FileChooserDialogImpl" timestamp="1611244093561">
-      <screen x="0" y="0" width="1280" height="689" />
+    <state x="449" y="148" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1611448849859">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="449" y="148" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.824@0.0.1536.824" timestamp="1611448849859" />
+    <state x="505" y="118" key="FileChooserDialogImpl" timestamp="1611484755112">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="421" y="99" key="FileChooserDialogImpl/0.0.1280.689/-1366.0.1366.738@0.0.1280.689" timestamp="1611244093561" />
-    <state x="142" y="0" key="SettingsEditor" timestamp="1611244045310">
-      <screen x="0" y="0" width="1280" height="689" />
+    <state x="505" y="118" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1611484755112" />
+    <state x="170" y="0" key="SettingsEditor" timestamp="1611449583065">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.689/-1366.0.1366.738@0.0.1280.689" timestamp="1611244045310" />
+    <state x="170" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1611449583065" />
     <state x="211" y="60" width="859" height="629" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1611244054456">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="211" y="60" width="859" height="629" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1280.689/-1366.0.1366.738@0.0.1280.689" timestamp="1611244054456" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1611449579705">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1611449579705" />
   </component>
 </project>
