@@ -1,5 +1,6 @@
 package com.example.myorder;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -28,6 +29,8 @@ public class Register extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
+
+
         restaurant_name = findViewById(R.id.restaurant_name);
         username = findViewById(R.id.username);
         phone = findViewById(R.id.phone);
@@ -47,7 +50,11 @@ public class Register extends AppCompatActivity {
                 String email_text = email.getText().toString().trim();
                 String password_text = password.getText().toString().trim();
 
-
+                if (mAuth.getCurrentUser() != null) {
+                    Intent intToHome = new Intent(Register.this, SignIn.class);
+                    startActivity(intToHome);
+                    finish();
+                }
                 mAuth.createUserWithEmailAndPassword(email_text, password_text)
                         .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                             @Override
@@ -73,6 +80,9 @@ public class Register extends AppCompatActivity {
                                 }
                             }
                         });
+
+                Intent intToHome = new Intent(Register.this, SignIn.class);
+                startActivity(intToHome);
             }
         });
     }

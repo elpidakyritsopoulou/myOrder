@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyOrder">
-        <activity android:name=".SignIn"></activity>
+        <activity android:name=".SignIn" />
         <activity android:name=".Register" />
         <activity android:name=".anapsiktika" />
         <activity android:name=".Epidorpia" />
@@ -23,7 +23,6 @@
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
