@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyOrder">
-        <activity android:name=".SignIn"></activity>
+        <activity android:name=".FoodList"></activity>
+        <activity android:name=".Try" />
+        <activity android:name=".SignIn" />
         <activity android:name=".Register" />
         <activity android:name=".anapsiktika" />
         <activity android:name=".Epidorpia" />
