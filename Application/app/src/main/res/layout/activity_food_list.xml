@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.connstraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FoodList">
+    tools:context=".Food_list">
 
-<android.support.v7.widget.RecyclerView
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:id="@+/recycler_food"
-    android:scrollbars="vertical"
-    tools:ignore="InvalidId" />
-
-</android.support.connstraint.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

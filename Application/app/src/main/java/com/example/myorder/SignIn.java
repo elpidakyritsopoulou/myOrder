@@ -74,51 +74,52 @@ public class SignIn extends AppCompatActivity {
                 public void loginUser (View v){
                     if (!validateUsername | validatePassword)){
                         return;
-                    }
-                    else{
+                    } else{
                         isUser();
                     }
                 }
+
+
             }
         });
-    }
 
-    private void isUser() {
+        private void isUser() {
 
-        String userEnteredUsername = username.getText().toString().trim();
-        String userEnteredPassword = password.getText().toString().trim();
+            String userEnteredUsername = username.getText().toString().trim();
+            String userEnteredPassword = password.getText().toString().trim();
 
-        DatabaseReference reference = FirebaseDatabase.getInstance().getReference("Restaurant");
+            DatabaseReference reference = FirebaseDatabase.getInstance().getReference("Restaurant");
 
-        Query checkUser = reference.orderByChild("username").equalTo(userEnteredUsername);
+            Query checkUser = reference.orderByChild("username").equalTo(userEnteredUsername);
 
-        checkUser.addListenerForSingleValueEvent(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+            checkUser.addListenerForSingleValueEvent(new ValueEventListener() {
+                @Override
+                public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
 
-                if (dataSnapshot.exists()) {
+                    if (dataSnapshot.exists()) {
 
-                    String passwordDB = dataSnapshot.child(userEnteredUsername).child("password").getValue(String.class);
+                        String passwordDB = dataSnapshot.child(userEnteredUsername).child("password").getValue(String.class);
 
-                    if (passwordDB.equals(userEnteredPassword)) {
-                        Intent intent = new Intent(getApplicationContext(), SignIn.class);
-                        startActivity(intent);
+                        if (passwordDB.equals(userEnteredPassword)) {
+                            Intent intent = new Intent(getApplicationContext(), SignIn.class);
+                            startActivity(intent);
+                        } else {
+                            password.setError("Wrong Password");
+                        }
                     } else {
-                        password.setError("Wrong Password");
+                        username.setError("No such User exist");
+                        username.requestFocus();
+
                     }
-                } else {
-                    username.setError("No such User exist");
-                    username.requestFocus();
-
                 }
-            }
 
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-            }
-        });
+                @Override
+                public void onCancelled(@NonNull DatabaseError error) {
+                }
+            });
 
 
-    }
+        }
+}
 }
 

@@ -62,7 +62,7 @@ public class Register extends AppCompatActivity {
                                 if (task.isSuccessful()) {
                                     Restaurant restaurant = new Restaurant(restaurant_name_text, username_text, phone_text, email_text, password_text);
 
-                                    FirebaseDatabase.getInstance().getReference("Restaurant")
+                                    FirebaseDatabase.getInstance().getReference("Users")
                                             .child(FirebaseAuth.getInstance().getCurrentUser().getUid())
                                             .setValue(restaurant).addOnCompleteListener(new OnCompleteListener<Void>() {
                                         @Override
