@@ -32,7 +32,7 @@ public class Register extends AppCompatActivity {
 
 
         restaurant_name = findViewById(R.id.restaurant_name);
-        username = findViewById(R.id.username);
+        username = findViewById(R.id.edtPhone);
         phone = findViewById(R.id.phone);
         email = findViewById(R.id.email);
         password = findViewById(R.id.password);
