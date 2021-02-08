@@ -1,0 +1,30 @@
+{
+  "Menu" : {
+    "01" : {
+      "Name" : "Ορεκτικα",
+      "image" : "https://static.in2life.gr/media/pics/pics680/1136098-orektika-pasxalino_680.jpg"
+    },
+    "02" : {
+      "Name" : "Κυριως",
+      "image" : "https://www.mathimatamageirikis.gr/media/k2/items/cache/68f0729dbfa0e2e0301e7f43002c0610_XL.jpg"
+    },
+    "03" : {
+      "Name" : "Επιδορπια",
+      "image" : "https://www.clickatlife.gr/fu/p/38976/1200/10000/00000000004f80cf/1/krepes.jpg"
+    },
+    "04" : {
+      "Name" : "Αναψυκτικα",
+      "image" : "https://ygeiamou.gr/wp-content/uploads/2019/03/190318141928_beverages-1280x720.jpg"
+    }
+  },
+  "User" : {
+    "0988" : {
+      "Name" : "Elpida",
+      "Password" : "1234"
+    },
+    "0989" : {
+      "Name" : "Petros",
+      "Password" : "1234"
+    }
+  }
+}
