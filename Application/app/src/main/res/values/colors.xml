@@ -10,4 +10,8 @@
 
     <color name="btnSignIn">#872727</color>
     <color name="register">#5A1919</color>
+    
+    <color name="OverlayBackground">#872727</color>
+    <color name="OverlayActionBars">#5A1919</color>
+
 </resources>
