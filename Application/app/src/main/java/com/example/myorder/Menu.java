@@ -8,7 +8,14 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 public class Menu extends AppCompatActivity {
+
+    FirebaseDatabase database;
+    DatabaseReference menu;
+
 
     Button Home;
     ImageView Backbutton;

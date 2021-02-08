@@ -15,10 +15,12 @@ import androidx.navigation.ui.NavigationUI;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.snackbar.Snackbar;
+import com.google.firebase.database.FirebaseDatabase;
 
-public class HomeActivity extends AppCompatActivity {
+public class HomeActivity<AppBarConfiguration, NavController, database> extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
+    private Object NavigationUI;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,4 +62,8 @@ public class HomeActivity extends AppCompatActivity {
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
     }
+
+    //Init Firebase
+    database = FirebaseDatabase.getInstance();
+    menu = database.getReference("Menu");
 }
