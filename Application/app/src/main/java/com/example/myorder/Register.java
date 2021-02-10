@@ -44,17 +44,13 @@ public class Register extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+
                 String restaurant_name_text = restaurant_name.getText().toString().trim();
                 String username_text = username.getText().toString().trim();
                 String phone_text = phone.getText().toString().trim();
                 String email_text = email.getText().toString().trim();
                 String password_text = password.getText().toString().trim();
 
-                if (mAuth.getCurrentUser() != null) {
-                    Intent intToHome = new Intent(Register.this, SignIn.class);
-                    startActivity(intToHome);
-                    finish();
-                }
                 mAuth.createUserWithEmailAndPassword(email_text, password_text)
                         .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                             @Override
@@ -62,27 +58,27 @@ public class Register extends AppCompatActivity {
                                 if (task.isSuccessful()) {
                                     Restaurant restaurant = new Restaurant(restaurant_name_text, username_text, phone_text, email_text, password_text);
 
-                                    FirebaseDatabase.getInstance().getReference("Users")
+                                    FirebaseDatabase.getInstance().getReference("Restaurant")
                                             .child(FirebaseAuth.getInstance().getCurrentUser().getUid())
                                             .setValue(restaurant).addOnCompleteListener(new OnCompleteListener<Void>() {
                                         @Override
                                         public void onComplete(@NonNull Task<Void> task) {
+
                                             if (task.isSuccessful()) {
                                                 Toast.makeText(Register.this, "Η εγγραφή ολοκληρώθηκε!", Toast.LENGTH_SHORT).show();
+
+                                                Intent intToHome = new Intent(Register.this, MainActivity.class);
+                                                startActivity(intToHome);
                                             } else {
-                                                Toast.makeText(Register.this, "Σφάλμα!", Toast.LENGTH_SHORT).show();
+                                                Toast.makeText(getApplication(), "Σφάλμα! Η εγγραφη δεν ολοκληρώθηκε", Toast.LENGTH_SHORT).show();
                                             }
                                         }
                                     });
-
-                                } else {
-                                    Toast.makeText(Register.this, "ERROR", Toast.LENGTH_SHORT).show();
                                 }
                             }
                         });
 
-                Intent intToHome = new Intent(Register.this, SignIn.class);
-                startActivity(intToHome);
+
             }
         });
     }

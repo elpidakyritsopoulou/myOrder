@@ -9,11 +9,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyOrder">
-        <activity
-            android:name=".HomeActivity"
-            android:label="@string/title_activity_home"
-            android:theme="@style/Theme.MyOrder.NoActionBar"></activity>
-        <activity android:name=".Try" />
         <activity android:name=".SignIn" />
         <activity android:name=".Register" />
         <activity android:name=".anapsiktika" />
