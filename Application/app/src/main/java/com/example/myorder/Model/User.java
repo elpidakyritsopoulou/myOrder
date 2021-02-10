@@ -1,24 +1,25 @@
 package com.example.myorder.Model;
 
 public class User {
-    private String Name;
+    private String username;
     private String Password;
+
 
 
     public User() {
     }
 
     public User(String name, String password) {
-        this.Name = name;
-        Password = password;
+        this.username = name;
+        this.Password = password;
     }
 
     public String getName() {
-        return Name;
+        return username;
     }
 
     public void setName(String name) {
-        this.Name = name;
+        this.username = name;
     }
 
     public String getPassword() {
@@ -28,4 +29,6 @@ public class User {
     public void setPassword(String password) {
         Password = password;
     }
+
+
 }

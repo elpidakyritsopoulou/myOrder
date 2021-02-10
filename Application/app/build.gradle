@@ -60,7 +60,7 @@ dependencies {
     implementation 'com.google.firebase:firebase-database:10.2.0'
     implementation 'info.hoang8f:fbutton:1.0.5'
     implementation 'com.rengwuxian.materialedittext:library:2.1.4'
-    implementation 'junit:junit:4.12'
+    testimplementation 'junit:junit:4.12'
 
 
 
