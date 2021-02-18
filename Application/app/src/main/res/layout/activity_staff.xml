@@ -1,150 +1,113 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_1_"
+    android:background="#E4742A"
     tools:context=".MainActivity">
 
 
-    <Button
-        android:id="@+id/Staff1"
-        android:layout_width="155dp"
-        android:layout_height="151dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="48dp"
-        android:layout_marginLeft="48dp"
-        android:layout_marginTop="116dp"
-        android:background="@drawable/card"
-        android:clickable="true"
-        android:text=""
-        app:backgroundTint="#000000"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/Staff2"
-        android:layout_width="155dp"
-        android:layout_height="151dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="116dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
-        android:background="@drawable/card"
-        android:clickable="true"
-        android:text=""
-        app:backgroundTint="#000000"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="80dp"
+            android:orientation="vertical" >
 
-    <Button
-        android:id="@+id/Staff3"
-        android:layout_width="155dp"
-        android:layout_height="151dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="48dp"
-        android:layout_marginLeft="48dp"
-        android:layout_marginTop="112dp"
-        android:background="@drawable/card"
-        android:clickable="true"
-        android:text=""
-        app:backgroundTint="#000000"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Staff1" />
+            <Button
+                android:id="@+id/Staff1"
+                android:layout_width="153dp"
+                android:layout_height="153dp"
+                android:layout_marginStart="115dp"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="191dp"
+                android:layout_marginEnd="56dp"
+                android:background="@drawable/card"
+                android:clickable="true"
+                android:text=""
+                app:backgroundTint="#000000" />
 
-    <Button
-        android:id="@+id/Staff4"
-        android:layout_width="155dp"
-        android:layout_height="151dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="112dp"
-        android:background="@drawable/card"
-        android:clickable="true"
-        android:text=""
-        app:backgroundTint="#000000"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.396"
-        app:layout_constraintStart_toEndOf="@+id/Staff3"
-        app:layout_constraintTop_toBottomOf="@+id/Staff2" />
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:text="Staff 1"
+                android:textAlignment="center"
+                android:textSize="36sp" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:text="Staff1"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/textView5"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Staff1"
-        tools:ignore="MissingConstraints" />
+            <Button
+                android:id="@+id/Staff2"
+                android:layout_width="155dp"
+                android:layout_height="151dp"
+                android:layout_marginStart="115dp"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="191dp"
+                android:layout_marginEnd="56dp"
+                android:background="@drawable/card"
+                android:clickable="true"
+                android:text=""
+                app:backgroundTint="#000000" />
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_centerVertical="true"
-        android:layout_marginTop="4dp"
-        android:text="Staff2"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.779"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Staff2"
-        tools:ignore="MissingConstraints" />
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:text="Staff 2"
+                android:textAlignment="center"
+                android:textSize="36sp" />
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_centerVertical="true"
-        android:text="Staff3"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.293"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Staff3"
-        app:layout_constraintVertical_bias="0.0"
-        tools:ignore="MissingConstraints" />
+            <Button
+                android:id="@+id/Staff3"
+                android:layout_width="155dp"
+                android:layout_height="151dp"
+                android:layout_marginStart="115dp"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="191dp"
+                android:layout_marginEnd="56dp"
+                android:background="@drawable/card"
+                android:clickable="true"
+                android:text=""
+                app:backgroundTint="#000000" />
 
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:text="Staff4"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.568"
-        app:layout_constraintStart_toEndOf="@+id/textView4"
-        app:layout_constraintTop_toBottomOf="@+id/Staff4"
-        app:layout_constraintVertical_bias="0.0"
-        tools:ignore="MissingConstraints" />
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:text="Staff 3"
+                android:textAlignment="center"
+                android:textSize="36sp" />
+
+            <Button
+                android:id="@+id/Staff4"
+                android:layout_width="155dp"
+                android:layout_height="151dp"
+                android:layout_marginStart="115dp"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="191dp"
+                android:layout_marginEnd="56dp"
+                android:background="@drawable/card"
+                android:clickable="true"
+                android:text=""
+                app:backgroundTint="#000000" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:text="Staff 4"
+                android:textAlignment="center"
+                android:textSize="36sp" />
+
+        </LinearLayout>
+    </ScrollView>
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

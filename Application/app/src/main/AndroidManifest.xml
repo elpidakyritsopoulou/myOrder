@@ -9,11 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyOrder">
-        <activity
-            android:name=".HomeActivity"
-            android:label="@string/title_activity_home"
-            android:theme="@style/Theme.MyOrder.NoActionBar"></activity>
-        <activity android:name=".Try" />
+        <activity android:name=".Menu_"></activity>
         <activity android:name=".SignIn" />
         <activity android:name=".Register" />
         <activity android:name=".anapsiktika" />
@@ -22,7 +18,6 @@
         <activity android:name=".payment_method" />
         <activity android:name=".order_pay" />
         <activity android:name=".Tables" />
-        <activity android:name=".Menu" />
         <activity android:name=".Order" />
         <activity android:name=".Staff" />
         <activity android:name=".MainActivity">

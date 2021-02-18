@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.ImageView;
 
 public class Order extends AppCompatActivity {
+    private
 
     ImageView Cancel;
     ImageView Backbutton;
@@ -23,7 +24,7 @@ public class Order extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                Intent intent_one = new Intent(Order.this, Menu.class);
+                Intent intent_one = new Intent(Order.this, Menu_.class);
                 startActivity(intent_one);
 
             }
@@ -32,14 +33,14 @@ public class Order extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                Intent intent_one = new Intent(Order.this, Menu.class);
+                Intent intent_one = new Intent(Order.this, Menu_.class);
                 startActivity(intent_one);
 
             }
         });
 
 
-
     }
+
 
 }

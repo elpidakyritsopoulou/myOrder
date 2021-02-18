@@ -59,7 +59,7 @@ public class SignIn extends AppCompatActivity {
                             User user = snapshot.child(username.getText().toString()).getValue(User.class);
                             if (user.getPassword().equals((password.getText().toString()))) {
                                 Toast.makeText(SignIn.this, "Sign in successfully!", Toast.LENGTH_SHORT).show();
-                                Intent signin = new Intent(SignIn.this, Menu.class);
+                                Intent signin = new Intent(SignIn.this, Staff.class);
                                 startActivity(signin);
                             } else {
                                 Toast.makeText(SignIn.this, "Sign in failed!", Toast.LENGTH_SHORT).show();
