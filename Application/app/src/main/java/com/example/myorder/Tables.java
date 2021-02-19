@@ -23,9 +23,9 @@ public class Tables extends AppCompatActivity {
 
             Backbutton = findViewById(R.id.backbutton);
             Table1 = findViewById(R.id.table_1_);
-        Table2 = findViewById(R.id.table_2_);
-        Table3 = findViewById(R.id.table_3_);
-        Table4 = findViewById(R.id.table_4_);
+            Table2 = findViewById(R.id.table_2_);
+            Table3 = findViewById(R.id.table_3_);
+            Table4 = findViewById(R.id.table_4_);
 
 
             Backbutton.setOnClickListener(new View.OnClickListener() {

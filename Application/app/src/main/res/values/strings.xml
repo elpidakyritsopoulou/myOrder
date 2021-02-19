@@ -14,4 +14,10 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+    <string name="menu">MENU</string>
+    <string name="done">DONE ✔</string>
+    <string name="anapsiktika">ΑΝΑΨΥΚΤΙΚΑ</string>
+    <string name="kuriws">ΚΥΡΙΩΣ</string>
+    <string name="epidorpia">ΕΠΙΔΟΡΠΙΑ</string>
+    <string name="orektika">ΟΡΕΚΤΙΚΑ</string>
 </resources>

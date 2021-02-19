@@ -42,7 +42,7 @@
     <property name="BundleExportedModule" value="myOrder" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Application" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -78,11 +78,11 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="449" y="148" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.824@0.0.1536.824" timestamp="1611448849859" />
-    <state x="505" y="118" key="FileChooserDialogImpl" timestamp="1611484755112">
+    <state x="505" y="118" key="FileChooserDialogImpl" timestamp="1613241423146">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="421" y="99" key="FileChooserDialogImpl/0.0.1280.689/-1366.0.1366.738@0.0.1280.689" timestamp="1611244093561" />
-    <state x="505" y="118" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1611484755112" />
+    <state x="505" y="118" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1613241423146" />
     <state x="170" y="0" key="SettingsEditor" timestamp="1611449583065">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
