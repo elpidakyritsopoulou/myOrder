@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#E4742A"
+    android:background="#E1864A"
     tools:context=".Register">
 
 
@@ -27,9 +27,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="67dp"
-        android:layout_marginLeft="67dp"
         android:layout_marginEnd="67dp"
-        android:layout_marginRight="67dp"
         android:layout_marginBottom="34dp"
         android:hint="Restaurant Name"
         android:maxLines="1"
@@ -44,9 +42,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="67dp"
-        android:layout_marginLeft="67dp"
         android:layout_marginEnd="67dp"
-        android:layout_marginRight="67dp"
         android:layout_marginBottom="49dp"
         android:hint="Username"
         android:maxLines="1"
@@ -61,9 +57,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="67dp"
-        android:layout_marginLeft="67dp"
         android:layout_marginEnd="67dp"
-        android:layout_marginRight="67dp"
         android:layout_marginBottom="56dp"
         android:hint="Phone"
         android:maxLines="1"
@@ -78,10 +72,8 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="67dp"
-        android:layout_marginLeft="67dp"
         android:layout_marginEnd="67dp"
-        android:layout_marginRight="67dp"
-        android:layout_marginBottom="52dp"
+        android:layout_marginBottom="60dp"
         android:hint="Email"
         android:inputType="textEmailAddress"
         android:maxLines="1"
@@ -93,13 +85,9 @@
 
     <EditText
         android:id="@+id/password"
-        android:layout_width="0dp"
+        android:layout_width="277dp"
         android:layout_height="0dp"
-        android:layout_marginStart="67dp"
-        android:layout_marginLeft="67dp"
-        android:layout_marginEnd="67dp"
-        android:layout_marginRight="67dp"
-        android:layout_marginBottom="181dp"
+        android:layout_marginBottom="173dp"
         android:hint="Password"
         android:inputType="textPassword"
         android:maxLines="1"
@@ -111,23 +99,21 @@
 
     <View
         android:id="@+id/view"
-        android:layout_width="342dp"
-        android:layout_height="534dp"
-        android:layout_marginStart="54dp"
-        android:layout_marginEnd="54dp"
-        android:layout_marginBottom="131dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="113dp"
         android:background="#23605D5D"
         app:layout_constraintBottom_toTopOf="@+id/done2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/done2"
         android:layout_width="91dp"
-        android:layout_height="72dp"
+        android:layout_height="0dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
@@ -136,7 +122,6 @@
         app:backgroundTint="@color/design_default_color_error"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/password" />
 
