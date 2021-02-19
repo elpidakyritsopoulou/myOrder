@@ -10,10 +10,12 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.myorder.Model.User;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class Register extends AppCompatActivity {
@@ -40,9 +42,13 @@ public class Register extends AppCompatActivity {
 
         mAuth = FirebaseAuth.getInstance();
 
+
         done2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                FirebaseDatabase database = FirebaseDatabase.getInstance();
+                DatabaseReference mRef = database.getReference("Restaurant");
 
 
                 String restaurant_name_text = restaurant_name.getText().toString().trim();
@@ -55,26 +61,31 @@ public class Register extends AppCompatActivity {
                         .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
-                                if (task.isSuccessful()) {
-                                    Restaurant restaurant = new Restaurant(restaurant_name_text, username_text, phone_text, email_text, password_text);
 
-                                    FirebaseDatabase.getInstance().getReference("Restaurant")
+                                if (task.isSuccessful()) {
+                                    User user = new User(restaurant_name_text, username_text, phone_text, email_text, password_text);
+
+                                    FirebaseDatabase.getInstance().getReference("User")
                                             .child(FirebaseAuth.getInstance().getCurrentUser().getUid())
-                                            .setValue(restaurant).addOnCompleteListener(new OnCompleteListener<Void>() {
+                                            .setValue(user).addOnCompleteListener(new OnCompleteListener<Void>() {
                                         @Override
                                         public void onComplete(@NonNull Task<Void> task) {
 
                                             if (task.isSuccessful()) {
-                                                Toast.makeText(Register.this, "Η εγγραφή ολοκληρώθηκε!", Toast.LENGTH_SHORT).show();
-
-                                                Intent intToHome = new Intent(Register.this, MainActivity.class);
-                                                startActivity(intToHome);
+                                                Toast.makeText(getApplication(), "Registered", Toast.LENGTH_SHORT).show();
+                                                Intent intent = new Intent(Register.this, SignIn.class);
+                                                startActivity(intent);
                                             } else {
-                                                Toast.makeText(getApplication(), "Σφάλμα! Η εγγραφη δεν ολοκληρώθηκε", Toast.LENGTH_SHORT).show();
+                                                Toast.makeText(Register.this, "Error", Toast.LENGTH_SHORT).show();
                                             }
+
                                         }
                                     });
+
+                                } else {
+                                    Toast.makeText(Register.this, "Email already exists", Toast.LENGTH_SHORT).show();
                                 }
+
                             }
                         });
 

@@ -12,7 +12,6 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.myorder.Model.User;
-import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -21,17 +20,17 @@ import com.google.firebase.database.ValueEventListener;
 
 public class SignIn extends AppCompatActivity {
 
-    EditText username;
+    EditText email;
     EditText password;
     ImageView login;
-    FirebaseAuth mAuth;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_in);
 
-        username = findViewById(R.id.edtPhone);
+        email = findViewById(R.id.email);
         password = findViewById(R.id.password);
         login = findViewById(R.id.login);
 
@@ -51,12 +50,12 @@ public class SignIn extends AppCompatActivity {
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
 
                         //Check if user not exist in database
-                        if (snapshot.child(username.getText().toString()).exists()) {
+                        if (snapshot.child(email.getText().toString()).exists()) {
 
 
                             // Get User Information
                             mDialog.dismiss();
-                            User user = snapshot.child(username.getText().toString()).getValue(User.class);
+                            User user = snapshot.child(email.getText().toString()).getValue(User.class);
                             if (user.getPassword().equals((password.getText().toString()))) {
                                 Toast.makeText(SignIn.this, "Sign in successfully!", Toast.LENGTH_SHORT).show();
                                 Intent signin = new Intent(SignIn.this, Staff.class);
