@@ -4,13 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="match_parent"
+
     tools:context=".Menu_">
 
     <ImageView
         android:id="@+id/header"
         android:layout_width="413dp"
         android:layout_height="199dp"
-        android:background="@drawable/custom_button"
+        android:background="@drawable/background_1_"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -21,7 +22,7 @@
         android:layout_width="168dp"
         android:layout_height="67dp"
         android:layout_marginTop="32dp"
-        android:fontFamily="cursive"
+        android:fontFamily="serif-monospace"
         android:text="Menu"
         android:textAlignment="center"
         android:textAllCaps="true"
@@ -79,10 +80,10 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginLeft="10dp"
                 android:backgroundTint="@color/black"
-                android:fontFamily="@font/actor"
+                android:fontFamily="serif-monospace"
                 android:text="ΟΡΕΚΤΙΚΑ"
                 android:textAllCaps="false"
-                android:cornerRadius="500dp" />
+                app:cornerRadius="500dp" />
 
             <Button
                 android:id="@+id/kurios"
@@ -94,7 +95,7 @@
                 android:fontFamily="@font/actor"
                 android:text="ΚΥΡΙΩΣ"
                 android:textAllCaps="false"
-                android:cornerRadius="500dp" />
+                app:cornerRadius="500dp" />
 
             <Button
                 android:id="@+id/epidorpia"
@@ -106,7 +107,7 @@
                 android:fontFamily="@font/actor"
                 android:text="ΕΠΙΔΟΡΠΙΑ"
                 android:textAllCaps="false"
-                android:cornerRadius="500dp" />
+                app:cornerRadius="500dp" />
 
             <Button
                 android:id="@+id/anapsikitka"
@@ -142,9 +143,10 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView5"
+                android:id="@+id/head_orektika"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
+                android:fontFamily="serif-monospace"
                 android:gravity="bottom|center_horizontal"
                 android:text=" ΟΡΕΚΤΙΚΑ"
                 android:textAllCaps="true"
@@ -156,13 +158,13 @@
                 android:layout_height="wrap_content">
 
                 <ImageView
-                    android:id="@+id/imageView4"
+                    android:id="@+id/image_xwriatiki"
                     android:layout_width="200dp"
                     android:layout_height="match_parent"
                     app:srcCompat="@drawable/xwriatiki" />
 
                 <TextView
-                    android:id="@+id/textView9"
+                    android:id="@+id/head_xwriatiki"
                     android:layout_width="194dp"
                     android:layout_height="54dp"
                     android:layout_gravity="right"
@@ -173,27 +175,48 @@
                     android:textStyle="bold|italic" />
 
                 <TextView
-                    android:id="@+id/textView11"
-                    android:layout_width="90dp"
-                    android:layout_height="55dp"
+                    android:id="@+id/timi_xwriatiki"
+                    android:layout_width="69dp"
+                    android:layout_height="44dp"
                     android:layout_gravity="center|right"
-                    android:gravity="center_horizontal"
+                    android:gravity="center"
                     android:text="5.50€"
                     android:textSize="18sp" />
 
 
                 <Button
-                    android:id="@+id/add"
-                    android:layout_width="183dp"
-                    android:layout_height="36dp"
-                    android:layout_gravity="bottom|right"
+                    android:id="@+id/add1"
+                    android:layout_width="188dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right|end"
                     android:layout_marginStart="10dp"
                     android:layout_marginLeft="10dp"
                     android:backgroundTint="@color/black"
                     android:fontFamily="@font/actor"
                     android:text="ΠΡΟΣΘΗΚΗ"
                     android:textAllCaps="false"
-                    android:cornerRadius="500dp" />
+                    app:cornerRadius="500dp" />
+
+                <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+                    android:id="@+id/btn_quantity1"
+                    android:layout_width="111dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center|right"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginEnd="80dp"
+                    android:layout_marginBottom="18dp"
+                    android:background="#FFFFFF"
+                    android:backgroundTint="#FFFFFF"
+                    app:backGroundColor="#FFFFFF"
+                    app:backgroundColor="@color/white"
+                    app:finalNumber="20"
+                    app:initialNumber="1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:textColor="@color/black"
+                    app:textSize="5sp" />
+
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
@@ -202,19 +225,19 @@
 
                 <Button
                     android:id="@+id/add2"
-                    android:layout_width="183dp"
-                    android:layout_height="36dp"
-                    android:layout_gravity="bottom|right"
+                    android:layout_width="188dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right|end"
                     android:layout_marginStart="10dp"
                     android:layout_marginLeft="10dp"
                     android:backgroundTint="@color/black"
                     android:fontFamily="@font/actor"
                     android:text="ΠΡΟΣΘΗΚΗ"
                     android:textAllCaps="false"
-                    android:cornerRadius="500dp" />
+                    app:cornerRadius="500dp" />
 
                 <TextView
-                    android:id="@+id/textView13"
+                    android:id="@+id/timi_feta"
                     android:layout_width="90dp"
                     android:layout_height="55dp"
                     android:layout_gravity="center|right"
@@ -223,7 +246,7 @@
                     android:textSize="18sp" />
 
                 <TextView
-                    android:id="@+id/textView12"
+                    android:id="@+id/head_feta"
                     android:layout_width="194dp"
                     android:layout_height="54dp"
                     android:layout_gravity="right"
@@ -234,10 +257,29 @@
                     android:textStyle="bold|italic" />
 
                 <ImageView
-                    android:id="@+id/imageView6"
+                    android:id="@+id/imagefeta"
                     android:layout_width="200dp"
                     android:layout_height="match_parent"
                     app:srcCompat="@drawable/feta" />
+
+                <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+                    android:id="@+id/btn_quantity2"
+                    android:layout_width="111dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center|right"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginEnd="80dp"
+                    android:layout_marginBottom="18dp"
+                    android:background="#FFFFFF"
+                    android:backgroundTint="@android:color/primary_text_light_nodisable"
+                    app:backGroundColor="#FFFFFF"
+                    app:finalNumber="20"
+                    app:initialNumber="1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:textColor="@color/black"
+                    app:textSize="5sp" />
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
@@ -245,7 +287,7 @@
                 android:layout_height="162dp">
 
                 <TextView
-                    android:id="@+id/textView15"
+                    android:id="@+id/timi_ravasaki"
                     android:layout_width="90dp"
                     android:layout_height="55dp"
                     android:layout_gravity="center|right"
@@ -254,7 +296,7 @@
                     android:textSize="18sp" />
 
                 <TextView
-                    android:id="@+id/textView14"
+                    android:id="@+id/head_ravasaki"
                     android:layout_width="194dp"
                     android:layout_height="54dp"
                     android:layout_gravity="right"
@@ -263,6 +305,66 @@
                     android:textColor="#000000"
                     android:textSize="24sp"
                     android:textStyle="bold|italic" />
+
+                <Button
+                    android:id="@+id/add3"
+                    android:layout_width="188dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right|end"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:backgroundTint="@color/black"
+                    android:fontFamily="@font/actor"
+                    android:text="ΠΡΟΣΘΗΚΗ"
+                    android:textAllCaps="false"
+                    app:cornerRadius="500dp" />
+
+                <ImageView
+                    android:id="@+id/image_ravasaki"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/fetameli" />
+
+                <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+                    android:id="@+id/btn_quantity3"
+                    android:layout_width="111dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center|right"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginEnd="80dp"
+                    android:layout_marginBottom="18dp"
+                    android:backgroundTint="@android:color/primary_text_light_nodisable"
+                    app:backGroundColor="#000000"
+                    app:finalNumber="20"
+                    app:initialNumber="1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:textColor="@color/white"
+                    app:textSize="5sp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="161dp">
+
+                <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+                    android:id="@+id/btn_quantity4"
+                    android:layout_width="111dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center|right"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginEnd="80dp"
+                    android:layout_marginBottom="18dp"
+                    android:backgroundTint="@android:color/primary_text_light_nodisable"
+                    app:backGroundColor="#000000"
+                    app:finalNumber="20"
+                    app:initialNumber="1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:textColor="@color/white"
+                    app:textSize="5sp" />
 
                 <Button
                     android:id="@+id/add4"
@@ -277,19 +379,519 @@
                     android:textAllCaps="false"
                     app:cornerRadius="500dp" />
 
+                <TextView
+                    android:id="@+id/timi_tzatziki"
+                    android:layout_width="90dp"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center|right"
+                    android:gravity="center_horizontal"
+                    android:text="3,00€"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/head_tzatziki"
+                    android:layout_width="194dp"
+                    android:layout_height="54dp"
+                    android:layout_gravity="right"
+                    android:gravity="center"
+                    android:text="ΤΖΑΤΖΙΚΙ"
+                    android:textColor="#000000"
+                    android:textSize="24sp"
+                    android:textStyle="bold|italic" />
+
                 <ImageView
-                    android:id="@+id/imageView7"
+                    android:id="@+id/image_tzatziki"
+                    android:layout_width="195dp"
+                    android:layout_height="161dp"
+                    app:srcCompat="@drawable/tzatziki" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/head_kuriws"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:gravity="bottom|center_horizontal"
+                android:text="ΚΥΡΙΩΣ"
+                android:textSize="24sp"
+                android:textStyle="bold|italic" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imagefileto"
+                    android:layout_width="200dp"
+                    android:layout_height="182dp"
+                    app:srcCompat="@drawable/fileto" />
+
+                <TextView
+                    android:id="@+id/head_fileto"
+                    android:layout_width="194dp"
+                    android:layout_height="54dp"
+                    android:layout_gravity="right"
+                    android:gravity="center"
+                    android:text="ΦΙΛΕΤΟ ΚΟΤΟΠΟΥΛΟ"
+                    android:textColor="#000000"
+                    android:textSize="24sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:id="@+id/timi_fileto"
+                    android:layout_width="69dp"
+                    android:layout_height="44dp"
+                    android:layout_gravity="center|right"
+                    android:gravity="center"
+                    android:text="5.50€"
+                    android:textSize="18sp" />
+
+
+                <Button
+                    android:id="@+id/add5"
+                    android:layout_width="188dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right|end"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:backgroundTint="@color/black"
+                    android:fontFamily="@font/actor"
+                    android:text="ΠΡΟΣΘΗΚΗ"
+                    android:textAllCaps="false"
+                    app:cornerRadius="500dp" />
+
+                <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+                    android:id="@+id/btn_quantity5"
+                    android:layout_width="111dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center|right"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginEnd="80dp"
+                    android:layout_marginBottom="18dp"
+                    app:finalNumber="20"
+                    app:initialNumber="1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:textColor="@color/white"
+                    app:textSize="5sp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/image_mprizola"
+                    android:layout_width="203dp"
+                    android:layout_height="189dp"
+                    app:srcCompat="@drawable/mprizola" />
+
+                <TextView
+                    android:id="@+id/head_mprizola"
+                    android:layout_width="194dp"
+                    android:layout_height="54dp"
+                    android:layout_gravity="right"
+                    android:gravity="center"
+                    android:text="ΜΠΡΙΖΟΛΑ"
+                    android:textColor="#000000"
+                    android:textSize="24sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:id="@+id/timi_mprizola"
+                    android:layout_width="69dp"
+                    android:layout_height="44dp"
+                    android:layout_gravity="center|right"
+                    android:gravity="center"
+                    android:text="5.50€"
+                    android:textSize="18sp" />
+
+
+                <Button
+                    android:id="@+id/add6"
+                    android:layout_width="188dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right|end"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:backgroundTint="@color/black"
+                    android:fontFamily="@font/actor"
+                    android:text="ΠΡΟΣΘΗΚΗ"
+                    android:textAllCaps="false"
+                    app:cornerRadius="500dp" />
+
+                <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+                    android:id="@+id/btn_quantity6"
+                    android:layout_width="111dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center|right"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginEnd="80dp"
+                    android:layout_marginBottom="18dp"
+                    app:finalNumber="20"
+                    app:initialNumber="1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:textColor="@color/white"
+                    app:textSize="5sp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/image_mpiftekiakoto"
+                    android:layout_width="202dp"
+                    android:layout_height="190dp"
+                    app:srcCompat="@drawable/mpiftekia" />
+
+                <TextView
+                    android:id="@+id/head_mpiftekiakoto"
+                    android:layout_width="194dp"
+                    android:layout_height="54dp"
+                    android:layout_gravity="right"
+                    android:gravity="center"
+                    android:text="ΜΠΙΦΤΕΚΙΑ ΚΟΤΟΠΟΥΛΟΥ"
+                    android:textColor="#000000"
+                    android:textSize="24sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:id="@+id/timi_mpiftekiakoto"
+                    android:layout_width="69dp"
+                    android:layout_height="44dp"
+                    android:layout_gravity="center|right"
+                    android:gravity="center"
+                    android:text="5.50€"
+                    android:textSize="18sp" />
+
+
+                <Button
+                    android:id="@+id/add7"
+                    android:layout_width="188dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right|end"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:backgroundTint="@color/black"
+                    android:fontFamily="@font/actor"
+                    android:text="ΠΡΟΣΘΗΚΗ"
+                    android:textAllCaps="false"
+                    app:cornerRadius="500dp" />
+
+                <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+                    android:id="@+id/btn_quantity7"
+                    android:layout_width="111dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center|right"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginEnd="80dp"
+                    android:layout_marginBottom="18dp"
+                    app:finalNumber="20"
+                    app:initialNumber="1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:textColor="@color/white"
+                    app:textSize="5sp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imagekarmponara"
+                    android:layout_width="200dp"
+                    android:layout_height="204dp"
+                    app:srcCompat="@drawable/karmponara" />
+
+                <TextView
+                    android:id="@+id/head_karmponara"
+                    android:layout_width="194dp"
+                    android:layout_height="54dp"
+                    android:layout_gravity="right"
+                    android:gravity="center"
+                    android:text="ΚΑΡΜΠΟΝΑΡΑ"
+                    android:textColor="#000000"
+                    android:textSize="24sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:id="@+id/timi_karmponara"
+                    android:layout_width="69dp"
+                    android:layout_height="44dp"
+                    android:layout_gravity="center|right"
+                    android:gravity="center"
+                    android:text="5.50€"
+                    android:textSize="18sp" />
+
+
+                <Button
+                    android:id="@+id/add8"
+                    android:layout_width="188dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right|end"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:backgroundTint="@color/black"
+                    android:fontFamily="@font/actor"
+                    android:text="ΠΡΟΣΘΗΚΗ"
+                    android:textAllCaps="false"
+                    app:cornerRadius="500dp" />
+
+                <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+                    android:id="@+id/btn_quantity8"
+                    android:layout_width="111dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center|right"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginEnd="80dp"
+                    android:layout_marginBottom="18dp"
+                    app:finalNumber="20"
+                    app:initialNumber="1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:textColor="@color/white"
+                    app:textSize="5sp" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/head_epidorpia"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:gravity="bottom|center_horizontal"
+                android:text="ΕΠΙΔΟΡΠΙΑ"
+                android:textSize="24sp"
+                android:textStyle="bold|italic" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/image_lemonpie"
+                    android:layout_width="202dp"
+                    android:layout_height="161dp"
+                    app:srcCompat="@drawable/lemonpie" />
+
+                <TextView
+                    android:id="@+id/head_lemonpie"
+                    android:layout_width="194dp"
+                    android:layout_height="54dp"
+                    android:layout_gravity="right"
+                    android:gravity="center"
+                    android:text="LEMONPIE"
+                    android:textColor="#000000"
+                    android:textSize="24sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:id="@+id/timi_lemonpie"
+                    android:layout_width="69dp"
+                    android:layout_height="44dp"
+                    android:layout_gravity="center|right"
+                    android:gravity="center"
+                    android:text="4.00€"
+                    android:textSize="18sp" />
+
+
+                <Button
+                    android:id="@+id/add9"
+                    android:layout_width="188dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right|end"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:backgroundTint="@color/black"
+                    android:fontFamily="@font/actor"
+                    android:text="ΠΡΟΣΘΗΚΗ"
+                    android:textAllCaps="false"
+                    app:cornerRadius="500dp" />
+
+                <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+                    android:id="@+id/btn_quantity9"
+                    android:layout_width="111dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center|right"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginEnd="80dp"
+                    android:layout_marginBottom="18dp"
+                    android:background="#FFFFFF"
+                    android:backgroundTint="#FFFFFF"
+                    app:backGroundColor="#FFFFFF"
+                    app:finalNumber="20"
+                    app:initialNumber="1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:textColor="@color/black"
+                    app:textSize="5sp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="166dp">
+
+                <Button
+                    android:id="@+id/add10"
+                    android:layout_width="188dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right|end"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:backgroundTint="@color/black"
+                    android:fontFamily="@font/actor"
+                    android:text="ΠΡΟΣΘΗΚΗ"
+                    android:textAllCaps="false"
+                    app:cornerRadius="500dp" />
+
+                <TextView
+                    android:id="@+id/timi_profiterol"
+                    android:layout_width="90dp"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center|right"
+                    android:gravity="center_horizontal"
+                    android:text="3,00€"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/head_profiterol"
+                    android:layout_width="194dp"
+                    android:layout_height="54dp"
+                    android:layout_gravity="right"
+                    android:gravity="center"
+                    android:text="ΠΡΟΦΙΤΕΡΟΛ"
+                    android:textColor="#000000"
+                    android:textSize="24sp"
+                    android:textStyle="bold|italic" />
+
+                <ImageView
+                    android:id="@+id/image_profiterol"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/profiterol" />
+
+                <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+                    android:id="@+id/btn_quantity10"
+                    android:layout_width="111dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center|right"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginEnd="80dp"
+                    android:layout_marginBottom="18dp"
+                    android:backgroundTint="@android:color/primary_text_light_nodisable"
+                    app:backGroundColor="#FFFFFF"
+                    app:finalNumber="20"
+                    app:initialNumber="1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:textColor="@color/black"
+                    app:textSize="5sp" />
+
+                <ImageView
+                    android:id="@+id/imageView45"
+                    android:layout_width="195dp"
+                    android:layout_height="161dp"
+                    app:srcCompat="@drawable/profiterol" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="162dp">
+
+                <TextView
+                    android:id="@+id/timi_redvelvet"
+                    android:layout_width="90dp"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center|right"
+                    android:gravity="center_horizontal"
+                    android:text="4,50€"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/head_redvelvet"
+                    android:layout_width="194dp"
+                    android:layout_height="54dp"
+                    android:layout_gravity="right"
+                    android:gravity="center"
+                    android:text="RED VELVET"
+                    android:textColor="#000000"
+                    android:textSize="24sp"
+                    android:textStyle="bold|italic" />
+
+                <Button
+                    android:id="@+id/add11"
+                    android:layout_width="188dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right|end"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:backgroundTint="@color/black"
+                    android:fontFamily="@font/actor"
+                    android:text="ΠΡΟΣΘΗΚΗ"
+                    android:textAllCaps="false"
+                    app:cornerRadius="500dp" />
+
+                <ImageView
+                    android:id="@+id/image_redvelvet"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
-                    app:srcCompat="@drawable/fetameli" />
+                    app:srcCompat="@drawable/redvelvet" />
+
+                <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+                    android:id="@+id/btn_quantity11"
+                    android:layout_width="111dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center|right"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginEnd="80dp"
+                    android:layout_marginBottom="18dp"
+                    android:backgroundTint="@android:color/primary_text_light_nodisable"
+                    app:backGroundColor="#000000"
+                    app:finalNumber="20"
+                    app:initialNumber="1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:textColor="@color/white"
+                    app:textSize="5sp" />
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="161dp">
 
+                <ImageView
+                    android:id="@+id/image_souflesokolatas"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/soufle" />
+
+                <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+                    android:id="@+id/btn_quantity12"
+                    android:layout_width="111dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center|right"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginEnd="80dp"
+                    android:layout_marginBottom="18dp"
+                    android:backgroundTint="@android:color/primary_text_light_nodisable"
+                    app:backGroundColor="#000000"
+                    app:finalNumber="20"
+                    app:initialNumber="1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:textColor="@color/white"
+                    app:textSize="5sp" />
+
                 <Button
-                    android:id="@+id/add5"
+                    android:id="@+id/add12"
                     android:layout_width="183dp"
                     android:layout_height="36dp"
                     android:layout_gravity="bottom|right"
@@ -302,7 +904,7 @@
                     app:cornerRadius="500dp" />
 
                 <TextView
-                    android:id="@+id/textView17"
+                    android:id="@+id/timi_soyflesokolatas"
                     android:layout_width="90dp"
                     android:layout_height="55dp"
                     android:layout_gravity="center|right"
@@ -311,53 +913,271 @@
                     android:textSize="18sp" />
 
                 <TextView
-                    android:id="@+id/textView16"
+                    android:id="@+id/head_souflesokolatas"
                     android:layout_width="194dp"
                     android:layout_height="54dp"
                     android:layout_gravity="right"
                     android:gravity="center"
-                    android:text="ΤΖΑΤΖΙΚΙ"
+                    android:text="ΣΟΥΦΛΕ ΣΟΚΟΛΑΤΑΣ"
                     android:textColor="#000000"
                     android:textSize="24sp"
                     android:textStyle="bold|italic" />
 
-                <ImageView
-                    android:id="@+id/imageView9"
-                    android:layout_width="195dp"
-                    android:layout_height="161dp"
-                    app:srcCompat="@drawable/tzatziki" />
             </androidx.cardview.widget.CardView>
 
             <TextView
-                android:id="@+id/textView6"
+                android:id="@+id/head_anapsiktika"
                 android:layout_width="match_parent"
                 android:layout_height="33dp"
                 android:gravity="bottom|center_horizontal"
-                android:text="ΚΥΡΙΩΣ"
+                android:text="ΑΝΑΨΥΚΤΙΚΑ"
                 android:textSize="24sp"
                 android:textStyle="bold|italic" />
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="163dp">
+                android:layout_height="wrap_content">
 
                 <ImageView
-                    android:id="@+id/imageView10"
+                    android:id="@+id/image_cola"
                     android:layout_width="200dp"
+                    android:layout_height="182dp"
+                    app:srcCompat="@drawable/cola" />
+
+                <TextView
+                    android:id="@+id/head_cola"
+                    android:layout_width="194dp"
+                    android:layout_height="54dp"
+                    android:layout_gravity="right"
+                    android:gravity="center"
+                    android:text="COCA-COLA"
+                    android:textColor="#000000"
+                    android:textSize="24sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:id="@+id/timi_cola"
+                    android:layout_width="69dp"
+                    android:layout_height="44dp"
+                    android:layout_gravity="center|right"
+                    android:gravity="center"
+                    android:text="2.50€"
+                    android:textSize="18sp" />
+
+
+                <Button
+                    android:id="@+id/add13"
+                    android:layout_width="188dp"
                     android:layout_height="wrap_content"
-                    app:srcCompat="@drawable/fileto" />
+                    android:layout_gravity="bottom|right|end"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:backgroundTint="@color/black"
+                    android:fontFamily="@font/actor"
+                    android:text="ΠΡΟΣΘΗΚΗ"
+                    android:textAllCaps="false"
+                    app:cornerRadius="500dp" />
+
+                <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+                    android:id="@+id/btn_quantity13"
+                    android:layout_width="111dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center|right"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginEnd="80dp"
+                    android:layout_marginBottom="18dp"
+                    app:finalNumber="20"
+                    app:initialNumber="1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:textColor="@color/white"
+                    app:textSize="5sp" />
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="156dp">
+                android:layout_height="wrap_content">
 
                 <ImageView
-                    android:id="@+id/imageView11"
-                    android:layout_width="200dp"
+                    android:id="@+id/image_sprite"
+                    android:layout_width="203dp"
+                    android:layout_height="189dp"
+                    app:srcCompat="@drawable/sprite" />
+                ΜΠΡΙΖΟΛΑ
+                <TextView
+                    android:id="@+id/head_sprite"
+                    android:layout_width="194dp"
+                    android:layout_height="54dp"
+                    android:layout_gravity="right"
+                    android:gravity="center"
+                    android:text="SPRITE"
+                    android:textColor="#000000"
+                    android:textSize="24sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:id="@+id/timi_sprite"
+                    android:layout_width="69dp"
+                    android:layout_height="44dp"
+                    android:layout_gravity="center|right"
+                    android:gravity="center"
+                    android:text="2.50€"
+                    android:textSize="18sp" />
+
+
+                <Button
+                    android:id="@+id/add14"
+                    android:layout_width="188dp"
                     android:layout_height="wrap_content"
-                    app:srcCompat="@drawable/mprizola" />
+                    android:layout_gravity="bottom|right|end"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:backgroundTint="@color/black"
+                    android:fontFamily="@font/actor"
+                    android:text="ΠΡΟΣΘΗΚΗ"
+                    android:textAllCaps="false"
+                    app:cornerRadius="500dp" />
+
+                <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+                    android:id="@+id/btn_quantity14"
+                    android:layout_width="111dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center|right"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginEnd="80dp"
+                    android:layout_marginBottom="18dp"
+                    app:finalNumber="20"
+                    app:initialNumber="1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:textColor="@color/white"
+                    app:textSize="5sp" />
             </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/image_fanta"
+                    android:layout_width="202dp"
+                    android:layout_height="190dp"
+                    app:srcCompat="@drawable/fanta" />
+
+                <TextView
+                    android:id="@+id/head_fanta"
+                    android:layout_width="194dp"
+                    android:layout_height="54dp"
+                    android:layout_gravity="right"
+                    android:gravity="center"
+                    android:text="ΠΟΡΤΟΚΑΛΑΔΑ"
+                    android:textColor="#000000"
+                    android:textSize="24sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:id="@+id/timi_fanta"
+                    android:layout_width="69dp"
+                    android:layout_height="44dp"
+                    android:layout_gravity="center|right"
+                    android:gravity="center"
+                    android:text="2.50€"
+                    android:textSize="18sp" />
+
+
+                <Button
+                    android:id="@+id/add15"
+                    android:layout_width="188dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right|end"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:backgroundTint="@color/black"
+                    android:fontFamily="@font/actor"
+                    android:text="ΠΡΟΣΘΗΚΗ"
+                    android:textAllCaps="false"
+                    app:cornerRadius="500dp" />
+
+                <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+                    android:id="@+id/btn_quantity15"
+                    android:layout_width="111dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center|right"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginEnd="80dp"
+                    android:layout_marginBottom="18dp"
+                    app:finalNumber="20"
+                    app:initialNumber="1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:textColor="@color/white"
+                    app:textSize="5sp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/image_fantalemon"
+                    android:layout_width="200dp"
+                    android:layout_height="204dp"
+                    app:srcCompat="@drawable/fantalemon" />
+
+                <TextView
+                    android:id="@+id/head_fantalemon"
+                    android:layout_width="194dp"
+                    android:layout_height="54dp"
+                    android:layout_gravity="right"
+                    android:gravity="center"
+                    android:text="ΛΕΜΟΝΑΔΑ"
+                    android:textColor="#000000"
+                    android:textSize="24sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:id="@+id/timi_fantalemon"
+                    android:layout_width="69dp"
+                    android:layout_height="44dp"
+                    android:layout_gravity="center|right"
+                    android:gravity="center"
+                    android:text="2.50€"
+                    android:textSize="18sp" />
+
+
+                <Button
+                    android:id="@+id/add16"
+                    android:layout_width="188dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right|end"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:backgroundTint="@color/black"
+                    android:fontFamily="@font/actor"
+                    android:text="ΠΡΟΣΘΗΚΗ"
+                    android:textAllCaps="false"
+                    app:cornerRadius="500dp" />
+
+                <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+                    android:id="@+id/btn_quantity16"
+                    android:layout_width="111dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center|right"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginEnd="80dp"
+                    android:layout_marginBottom="18dp"
+                    app:finalNumber="20"
+                    app:initialNumber="1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:textColor="@color/white"
+                    app:textSize="5sp" />
+            </androidx.cardview.widget.CardView>
+
         </LinearLayout>
     </ScrollView>
 
