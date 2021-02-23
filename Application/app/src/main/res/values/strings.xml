@@ -14,7 +14,15 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
-    <string name="staff_3">staff3</string>
-    <string name="staff_4">staff3</string>
     <string name="xvriatiki">ΧΩΡΙΑΤΙΚΗ</string>
+    <string name="todo">TODO</string>
+    <string name="staff_3">Staff 3</string>
+    <string name="staff_4">Staff 4</string>
+    <string name="table_1">Table 1</string>
+    <string name="table_2">Table 2</string>
+    <string name="table_3">Table 3</string>
+    <string name="table_4">Table 4</string>
+    <string name="staff_1">Staff 1</string>
+    <string name="staff_2">Staff 2</string>
+    <string name="προσθήκη">ΠΡΟΣΘΗΚΗ</string>
 </resources>

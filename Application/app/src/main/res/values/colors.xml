@@ -8,11 +8,9 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <color name="btnSignIn">#9A0A0A</color>
+    <color name="btnSignIn">#710909</color>
     <color name="register">#D33838</color>
 
-    <color name="OverlayBackground">#951414</color>
-    <color name="OverlayActionBars">#5A1919</color>
     <color name="elegant">#FFFFFF</color>
 
 

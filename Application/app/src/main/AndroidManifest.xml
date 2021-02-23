@@ -5,12 +5,14 @@
 
     <application
         android:allowBackup="true"
-        tools:replace="android:label, android:icon, android:theme"
         android:icon="@drawable/logo_1_"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.MyOrder">
+        android:theme="@style/Theme.MyOrder"
+        tools:replace="android:label, android:icon, android:theme">
+        <activity android:name=".Menu" />
+        <activity android:name=".Staff" />
         <activity android:name=".elegant_button" />
         <activity android:name=".SignIn" />
         <activity android:name=".Register" />
@@ -21,7 +23,6 @@
         <activity android:name=".order_pay" />
         <activity android:name=".Tables" />
         <activity android:name=".Order" />
-        <activity android:name=".Staff" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -33,7 +34,6 @@
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
-
     </application>
 
 </manifest>

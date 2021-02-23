@@ -20,7 +20,7 @@ import com.google.firebase.database.ValueEventListener;
 
 public class SignIn extends AppCompatActivity {
 
-    EditText email;
+    EditText username;
     EditText password;
     ImageView login;
 
@@ -30,7 +30,7 @@ public class SignIn extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_in);
 
-        email = findViewById(R.id.email);
+        username = findViewById(R.id.email);
         password = findViewById(R.id.password);
         login = findViewById(R.id.login);
 
@@ -45,21 +45,23 @@ public class SignIn extends AppCompatActivity {
                 mDialog.setMessage("Please wait");
                 mDialog.show();
 
+
                 table_user.addValueEventListener(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
 
                         //Check if user not exist in database
-                        if (snapshot.child(email.getText().toString()).exists()) {
-
-
+                        if (snapshot.child(username.getText().toString()).exists()) {
                             // Get User Information
                             mDialog.dismiss();
-                            User user = snapshot.child(email.getText().toString()).getValue(User.class);
+                            User user = snapshot.child(username.getText().toString()).getValue(User.class);
                             if (user.getPassword().equals((password.getText().toString()))) {
-                                Toast.makeText(SignIn.this, "Sign in successfully!", Toast.LENGTH_SHORT).show();
-                                Intent signin = new Intent(SignIn.this, Menu_.class);
-                                startActivity(signin);
+                                Intent myIntent = new Intent(SignIn.this, Staff.class);
+                                startActivity(myIntent);
+                                finish();
+//                                Toast.makeText(SignIn.this, "Sign in successfully!", Toast.LENGTH_SHORT).show();
+
+
                             } else {
                                 Toast.makeText(SignIn.this, "Sign in failed!", Toast.LENGTH_SHORT).show();
                             }
@@ -75,8 +77,8 @@ public class SignIn extends AppCompatActivity {
                     }
                 });
 
-
             }
+
 
         });
 

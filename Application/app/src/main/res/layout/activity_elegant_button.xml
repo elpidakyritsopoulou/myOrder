@@ -14,7 +14,7 @@
         android:layout_marginTop="18dp"
         android:layout_marginEnd="80dp"
         android:layout_marginBottom="18dp"
-        app:backGroundColor="@color/black"
+        app:backGroundColor="@color/purple_200"
         app:finalNumber="20"
         app:initialNumber="1"
         app:layout_constraintBottom_toBottomOf="parent"

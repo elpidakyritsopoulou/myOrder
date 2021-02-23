@@ -40,7 +40,7 @@
             android:layout_height="70dp"
             android:layout_margin="8dp"
             android:layout_weight="1.5"
-            android:backgroundTint="@color/btnSignIn"
+            android:backgroundTint="@color/register"
             android:shadowColor="@android:color/black"
             android:text="@string/register"
             android:textColor="@android:color/white"
@@ -53,7 +53,7 @@
             android:layout_height="70dp"
             android:layout_margin="8dp"
             android:layout_weight="1.5"
-            android:backgroundTint="@color/OverlayBackground"
+            android:backgroundTint="@color/btnSignIn"
             android:shadowColor="@android:color/black"
             android:text="@string/sign_in"
             android:textColor="@android:color/white" />
