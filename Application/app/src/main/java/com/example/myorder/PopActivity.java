@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.Activity;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
+import android.view.Gravity;
+import android.view.WindowManager;
 
 public class PopActivity extends Activity {
 
@@ -21,6 +23,11 @@ public class PopActivity extends Activity {
 
         getWindow().setLayout((int)(width*.8),  (int)(height*7));
 
+        WindowManager.LayoutParams params= getWindow().getAttributes();
+        params.gravity = Gravity.CENTER;
+        params.x = 0;
+        params.y = -20;
 
+        getWindow().setAttributes(params);
     }
 }

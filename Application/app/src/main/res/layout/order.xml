@@ -31,7 +31,7 @@
         android:layout_weight="1.5"
         android:backgroundTint="@color/btnSignIn"
         android:shadowColor="@android:color/black"
-        android:text="ΑΚΗΡΩΣΗ"
+        android:text="ΑΚΥΡΩΣΗ"
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
