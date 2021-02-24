@@ -18,9 +18,6 @@
         <activity android:name=".elegant_button" />
         <activity android:name=".SignIn" />
         <activity android:name=".Register" />
-        <activity android:name=".anapsiktika" />
-        <activity android:name=".Epidorpia" />
-        <activity android:name=".Orektika" />
         <activity android:name=".payment_method" />
         <activity android:name=".order_pay" />
         <activity android:name=".Tables" />
