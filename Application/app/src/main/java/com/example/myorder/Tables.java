@@ -15,41 +15,24 @@ public class Tables extends AppCompatActivity {
     Button Table2;
     Button Table3;
     Button Table4;
-
-
-    @Override
-    public <T extends View> T findViewById(int id) {
-        return super.findViewById(id);
-    }
-
+    Button button;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tables);
-
 
             Backbutton = findViewById(R.id.backbutton);
             Table1 = findViewById(R.id.table_1_);
             Table2 = findViewById(R.id.table_2_);
             Table3 = findViewById(R.id.table_3_);
             Table4 = findViewById(R.id.table_4_);
-            Table1 = (Button) findViewById(R.id.table_1_);
 
-        Backbutton.setOnClickListener(new View.OnClickListener() {
+
+            Backbutton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     Intent intent_one= new Intent(Tables.this,Staff.class);
                     startActivity(intent_one);
-
-                    Table1.setOnLongClickListener(new View.OnLongClickListener() {
-                        @Override
-                        public boolean onLongClick(View v) {
-                            Intent i = new Intent(getApplicationContext(),PopActivity.class);
-                            startActivity(i);
-                            return false;
-                        }
-                    });
-
                 }
 
             });

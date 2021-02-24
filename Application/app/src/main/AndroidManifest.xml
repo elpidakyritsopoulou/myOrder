@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.myorder">
 
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/logo_1_"
@@ -11,7 +12,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyOrder"
         tools:replace="android:label, android:icon, android:theme">
-        <activity android:name=".PopActivity"></activity>
         <activity android:name=".Bill" />
         <activity android:name=".Menu" />
         <activity android:name=".Staff" />
