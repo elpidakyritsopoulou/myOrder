@@ -3,14 +3,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#EFD8CE"
     tools:context=".Menu">
 
     <ImageView
         android:id="@+id/header"
-        android:layout_width="413dp"
+        android:layout_width="match_parent"
         android:layout_height="199dp"
         android:background="@drawable/background_1_"
         app:layout_constraintEnd_toEndOf="parent"
@@ -59,14 +59,16 @@
 
     <HorizontalScrollView
         android:id="@+id/horizontalScrollView"
-        android:layout_width="416dp"
-        android:layout_height="46dp"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
         android:layout_marginBottom="8dp"
         android:scrollbars="none"
         app:layout_constraintBottom_toBottomOf="@+id/header"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menu_title"
+        app:layout_constraintVertical_bias="1.0">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -129,14 +131,12 @@
 
     <ScrollView
         android:id="@+id/scrollView2"
-        android:layout_width="396dp"
-        android:layout_height="536dp"
-        android:layout_marginTop="55dp"
+        android:layout_width="409dp"
+        android:layout_height="537dp"
         android:scrollbars="none"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/horizontalScrollView">
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -225,11 +225,10 @@
                     android:layout_marginLeft="10dp"
                     android:backgroundTint="@color/btnSignIn"
                     android:fontFamily="@font/actor"
+                    android:radius="500dp"
                     android:text="@string/προσθήκη"
                     android:textAllCaps="false"
-                    android:textColor="@color/black"
-                    android:radius="500dp"/>
-
+                    android:textColor="@color/black" />
 
 
             </androidx.cardview.widget.CardView>
@@ -260,10 +259,10 @@
                     android:layout_marginLeft="10dp"
                     android:backgroundTint="@color/btnSignIn"
                     android:fontFamily="@font/actor"
+                    android:radius="500dp"
                     android:text="ΠΡΟΣΘΗΚΗ"
                     android:textAllCaps="false"
-                    android:textColor="@color/black"
-                    android:radius="500dp"/>
+                    android:textColor="@color/black" />
 
                 <TextView
                     android:id="@+id/timi_feta"
@@ -352,10 +351,10 @@
                     android:layout_marginLeft="10dp"
                     android:backgroundTint="@color/btnSignIn"
                     android:fontFamily="@font/actor"
+                    android:radius="500dp"
                     android:text="ΠΡΟΣΘΗΚΗ"
                     android:textAllCaps="false"
-                    android:textColor="@color/black"
-                    android:radius="500dp"/>
+                    android:textColor="@color/black" />
 
                 <ImageView
                     android:id="@+id/image_ravasaki"
@@ -423,10 +422,10 @@
                     android:layout_marginLeft="10dp"
                     android:backgroundTint="@color/btnSignIn"
                     android:fontFamily="@font/actor"
+                    android:radius="500dp"
                     android:text="ΠΡΟΣΘΗΚΗ"
                     android:textAllCaps="false"
-                    android:textColor="@color/black"
-                    android:radius="500dp"/>
+                    android:textColor="@color/black" />
 
                 <TextView
                     android:id="@+id/timi_tzatziki"
@@ -524,10 +523,10 @@
                     android:layout_marginLeft="10dp"
                     android:backgroundTint="@color/btnSignIn"
                     android:fontFamily="@font/actor"
+                    android:radius="500dp"
                     android:text="ΠΡΟΣΘΗΚΗ"
                     android:textAllCaps="false"
-                    android:textColor="@color/black"
-                    android:radius="500dp"/>
+                    android:textColor="@color/black" />
 
 
                 <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
@@ -597,10 +596,10 @@
                     android:layout_marginLeft="10dp"
                     android:backgroundTint="@color/btnSignIn"
                     android:fontFamily="@font/actor"
+                    android:radius="500dp"
                     android:text="ΠΡΟΣΘΗΚΗ"
                     android:textAllCaps="false"
-                    android:textColor="@color/black"
-                    android:radius="500dp"/>
+                    android:textColor="@color/black" />
 
                 <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
                     android:id="@+id/btn_quantity6"
@@ -669,10 +668,10 @@
                     android:layout_marginLeft="10dp"
                     android:backgroundTint="@color/btnSignIn"
                     android:fontFamily="@font/actor"
+                    android:radius="500dp"
                     android:text="ΠΡΟΣΘΗΚΗ"
                     android:textAllCaps="false"
-                    android:textColor="@color/black"
-                    android:radius="500dp"/>
+                    android:textColor="@color/black" />
 
                 <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
                     android:id="@+id/btn_quantity7"
@@ -741,10 +740,10 @@
                     android:layout_marginLeft="10dp"
                     android:backgroundTint="@color/btnSignIn"
                     android:fontFamily="@font/actor"
+                    android:radius="500dp"
                     android:text="ΠΡΟΣΘΗΚΗ"
                     android:textAllCaps="false"
-                    android:textColor="@color/black"
-                    android:radius="500dp"/>
+                    android:textColor="@color/black" />
 
                 <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
                     android:id="@+id/btn_quantity8"
@@ -832,10 +831,10 @@
                     android:layout_marginLeft="10dp"
                     android:backgroundTint="@color/btnSignIn"
                     android:fontFamily="@font/actor"
+                    android:radius="500dp"
                     android:text="ΠΡΟΣΘΗΚΗ"
                     android:textAllCaps="false"
-                    android:textColor="@color/black"
-                    android:radius="500dp"/>
+                    android:textColor="@color/black" />
 
                 <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
                     android:id="@+id/btn_quantity9"
@@ -880,10 +879,10 @@
                     android:layout_marginLeft="10dp"
                     android:backgroundTint="@color/btnSignIn"
                     android:fontFamily="@font/actor"
+                    android:radius="500dp"
                     android:text="ΠΡΟΣΘΗΚΗ"
                     android:textAllCaps="false"
-                    android:textColor="@color/black"
-                    android:radius="500dp"/>
+                    android:textColor="@color/black" />
 
                 <TextView
                     android:id="@+id/timi_profiterol"
@@ -979,10 +978,10 @@
                     android:layout_marginLeft="10dp"
                     android:backgroundTint="@color/btnSignIn"
                     android:fontFamily="@font/actor"
+                    android:radius="500dp"
                     android:text="ΠΡΟΣΘΗΚΗ"
                     android:textAllCaps="false"
-                    android:textColor="@color/black"
-                    android:radius="500dp"/>
+                    android:textColor="@color/black" />
 
                 <ImageView
                     android:id="@+id/image_redvelvet"
@@ -1056,10 +1055,11 @@
                     android:layout_marginLeft="10dp"
                     android:backgroundTint="@color/btnSignIn"
                     android:fontFamily="@font/actor"
+                    android:radius="500dp"
                     android:text="ΠΡΟΣΘΗΚΗ"
                     android:textAllCaps="false"
-                    android:textColor="@color/black"
-                    android:radius="500dp"/>
+                    android:textColor="@color/black" />
+
                 <TextView
                     android:id="@+id/timi_soyflesokolatas"
                     android:layout_width="90dp"
@@ -1151,10 +1151,10 @@
                     android:layout_marginLeft="10dp"
                     android:backgroundTint="@color/btnSignIn"
                     android:fontFamily="@font/actor"
+                    android:radius="500dp"
                     android:text="ΠΡΟΣΘΗΚΗ"
                     android:textAllCaps="false"
-                    android:textColor="@color/black"
-                    android:radius="500dp"/>
+                    android:textColor="@color/black" />
 
                 <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
                     android:id="@+id/btn_quantity13"
@@ -1224,10 +1224,10 @@
                     android:layout_marginLeft="10dp"
                     android:backgroundTint="@color/btnSignIn"
                     android:fontFamily="@font/actor"
+                    android:radius="500dp"
                     android:text="ΠΡΟΣΘΗΚΗ"
                     android:textAllCaps="false"
-                    android:textColor="@color/black"
-                    android:radius="500dp"/>
+                    android:textColor="@color/black" />
 
                 <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
                     android:id="@+id/btn_quantity14"
@@ -1296,10 +1296,10 @@
                     android:layout_marginLeft="10dp"
                     android:backgroundTint="@color/btnSignIn"
                     android:fontFamily="@font/actor"
+                    android:radius="500dp"
                     android:text="ΠΡΟΣΘΗΚΗ"
                     android:textAllCaps="false"
-                    android:textColor="@color/black"
-                    android:radius="500dp"/>
+                    android:textColor="@color/black" />
 
                 <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
                     android:id="@+id/btn_quantity15"
@@ -1368,10 +1368,10 @@
                     android:layout_marginLeft="10dp"
                     android:backgroundTint="@color/btnSignIn"
                     android:fontFamily="@font/actor"
+                    android:radius="500dp"
                     android:text="ΠΡΟΣΘΗΚΗ"
                     android:textAllCaps="false"
-                    android:textColor="@color/black"
-                    android:radius="500dp"/>
+                    android:textColor="@color/black" />
 
                 <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
                     android:id="@+id/btn_quantity16"
