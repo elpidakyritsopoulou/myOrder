@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyOrder"
         tools:replace="android:label, android:icon, android:theme">
-        <activity android:name=".PopActivity"></activity>
+        <activity android:name=".PopActivity" />
         <activity android:name=".Bill" />
         <activity android:name=".Menu" />
         <activity android:name=".Staff" />

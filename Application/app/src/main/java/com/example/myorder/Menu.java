@@ -4,23 +4,34 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.myorder.Model.Food;
+import com.example.myorder.ViewHolder.FoodAdapter;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
-public class Menu extends AppCompatActivity
+import java.util.ArrayList;
+
+
+public class Menu extends AppCompatActivity implements FoodAdapter.OnFoodListener
 //        implements NavigationView.OnNavigationItemSelectedListener
 {
+    private final FirebaseDatabase db = FirebaseDatabase.getInstance();
     ImageView Backbutton;
     FirebaseDatabase database;
     DatabaseReference category;
-
-    LinearLayout recycler_menu;
-    RecyclerView.LayoutManager layoutManager;
+    private final DatabaseReference ref = db.getReference().child("Food");
+    RecyclerView recyclerMenu;
+    private FoodAdapter adapter;
+    private ArrayList<Food> list;
 
 
     @Override
@@ -28,8 +39,8 @@ public class Menu extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
 
+        recyclerMenu = findViewById(R.id.recycler_menu);
         Backbutton = findViewById(R.id.backbutton);
-
         Backbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -39,43 +50,37 @@ public class Menu extends AppCompatActivity
 
         });
 
-        //Init Firebase
-        database = FirebaseDatabase.getInstance();
-        category = database.getReference("Category");
-//Load Menu
-//        recycler_menu = (RecyclerView)findViewById(R.id.recycler_menu);
-//        recycler_menu.setHasFixedSize(true);
-//        layoutManager = new LinearLayoutManager(this);
-//        recycler_menu.setLayoutManager(layoutManager);
+        recyclerMenu = findViewById(R.id.recycler_menu);
+        recyclerMenu.setHasFixedSize(true);
+        recyclerMenu.setLayoutManager(new LinearLayoutManager(recyclerMenu.getContext()));
 
-//        loadMenu();
-//    }
+        list = new ArrayList<Food>();
+        adapter = new FoodAdapter(this, list, this);
+        recyclerMenu.setAdapter(adapter);
 
-//    private void loadMenu() {
-//
-//        FirebaseRecyclerAdapter<Category, MenuViewHolder> adapter = new FirebaseRecyclerAdapter<Category, MenuViewHolder>(Category.class,R.layout.activity_menu,MenuViewHolder.class,category) {
-//            @Override
-//            protected void onBindViewHolder(@NonNull MenuViewHolder holder, int position, @NonNull Category model) {
-//               viewHolder.txtMenuName.setText(model.getName());
-//                Picasso.with(getBaseContext()).load(model.getImage())
-//                        .into(viewHolder.imageView);
-//                Category clickItem = model;
-//                createViewHolder().setItemClickListener() {
-//
-//                }
-//            }
-//
-//            @NonNull
-//            @Override
-//            public MenuViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-//                return null;
-//            }
-//
-//    }
-//
-//    @Override
-//    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-//        return false;
-//    }
+        ref.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+
+                for (DataSnapshot dataSnapshot : snapshot.getChildren()) {
+                    Food food = dataSnapshot.getValue(Food.class);
+                    list.add(food);
+                }
+
+                adapter.notifyDataSetChanged();
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+
+
+    }
+
+    @Override
+    public void onFoodClick(int position) {
+
     }
 }
