@@ -11,7 +11,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyOrder"
         tools:replace="android:label, android:icon, android:theme">
-        <activity android:name=".PopActivity" />
         <activity android:name=".Bill" />
         <activity android:name=".Menu" />
         <activity android:name=".Staff" />
@@ -29,7 +28,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+       <activity android:name=".PopActivity"
+           android:theme="@style/AppTheme.PopMe"
+           ></activity>
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

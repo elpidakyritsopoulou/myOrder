@@ -1,8 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/btnSignIn"
-    tools:context=".PopActivity"/>
+    tools:context=".PopActivity"
+    android:orientation="vertical"
+    android:background="@drawable/pop_bg">
+
+    <RadioGroup
+        android:id="@+id/Rgroup"
+        android:layout_width="match_parent"
+        android:layout_height="248dp"
+        android:layout_gravity="bottom|center"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ΚΑΤΑΣΤΑΣΗ ΤΡΑΠΕΖΙΟΥ"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/tablestatus1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#804DFF00"
+            android:text="ΔΙΑΘΕΣΙΜΟ"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/tablestatus2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#80FFDD00"
+            android:text="ΕΞΟΦΛΗΜΕΝΟ"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            />
+
+        <RadioButton
+            android:id="@+id/tablestatus3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#80FF0000"
+            android:text="ΜΗ ΔΙΑΘΕΣΙΜΟ"
+            android:textAlignment="textStart"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_close"
+            android:layout_width="189dp"
+            android:layout_height="66dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/btnSignIn"
+            android:text="OK"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+    </RadioGroup>
+
+
+</LinearLayout>
+
